@@ -56,7 +56,8 @@ p {
 
 footer {
     font-family: Inconsolata, monospace;
-    color: var(--palette-colour-2);
+    color: var(--palette-colour-3);
+    background-color: var(--palette-colour-2);
     padding: 15px;
 }
 
