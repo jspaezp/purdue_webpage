@@ -7,19 +7,15 @@
     --default-font: #A2A79E;
 }
 
+* {
+    font-family: Inconsolata, monospace;
+}
+
 body {
     background-color: var(--palette-colour-4);
 }
 
-h1 {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-h2 {
-    font-family: 'Noto Sans', sans-serif;
-}
-
-h3 {
+h1, h2, h3, h4, h5, h6 {
     font-family: 'Noto Sans', sans-serif;
 }
 
@@ -38,6 +34,10 @@ p {
     font-family: 'Noto Sans', sans-serif;
     margin-bottom: 0;
     border-radius: 0;
+}
+
+.navbar a{
+    font-family: 'Noto Sans', sans-serif;
 }
 
 .row.content {height: 900px}
