@@ -40,7 +40,9 @@ p {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.row.content {height: 90%}
+.row.content {
+    height: auto;
+}
 
 .sidenav {
     font-family: 'Noto Sans', sans-serif;
@@ -52,6 +54,14 @@ p {
 .sidenav a {
     color: var(--palette-colour-3);
     text-align: center;
+}
+
+.columns {
+    height: auto;
+}
+
+.columns > div {
+    height: auto;
 }
 
 footer {
