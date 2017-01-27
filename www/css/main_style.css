@@ -13,6 +13,7 @@
 
 body {
     background-color: var(--palette-colour-4);
+    font-family: Inconsolata, monospace;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -20,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: Inconsolata, monospace;
     font-size: 14px;
     font-style: normal;
     font-variant: normal;
@@ -40,15 +40,11 @@ p {
     font-family: 'Noto Sans', sans-serif;
 }
 
-.row.content {
-    height: auto;
-}
-
 .sidenav {
     font-family: 'Noto Sans', sans-serif;
     padding-top: 20px;
     background-color: var(--palette-colour-1);
-    height: 100%;
+    padding: 15px;
 }
 
 .sidenav a {
@@ -56,25 +52,14 @@ p {
     text-align: center;
 }
 
-.columns {
-    height: auto;
-}
-
-.columns > div {
-    height: auto;
-}
-
 footer {
-    font-family: Inconsolata, monospace;
     color: var(--palette-colour-3);
     background-color: var(--palette-colour-2);
     padding: 15px;
 }
 
-@media screen and (max-width: 767px) {
-    .sidenav {
-    height: auto;
-    padding: 15px;
+@media only screen and (max-width : 767px) {
+    .box {
+        height: auto !important;
     }
-    .row.content {height:auto;} 
 }

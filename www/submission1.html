@@ -1,6 +1,6 @@
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
-    <title>J Sebastian Paez</title>
+    <title>J Sebastian Paez - CHM579 - Submission 1</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" />
@@ -10,6 +10,7 @@
 
 </head>
 <body>
+
 <!-- NAVBAR START -->
 
 <nav class="navbar navbar-inverse">
@@ -24,7 +25,7 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="./index.html">Home</a></li>
         <!-- <li><a href="#">About</a></li>
              <li><a href="#">CHM 5990</a></li>
              <li><a href="#">Contact</a></li> -->
@@ -41,78 +42,88 @@
 
         <!-- SIDEBAR START -->
 
-    <div class="col-sm-2 sidenav">
+    <div class="col-md-2 sidenav">
       <p><a href="#about">About</a></p>
       <p><a href="#chm5990">Computational Chemistry</a></p>
       <p><a href="#contact">Contact</a></p>
     </div>
 
-    <div class="col-sm-10 text-left content-area">
+    <div class="col-md-10 text-left content-area">
+        <hr>
 
         <div id="strained_lengths" class="container">
             <h1>Structure Refinement</h1>
+            <hr>
             <h2>MOST STRAINED BOND LENGTHS</h2>
-            <img alt="Strained Bond Lengths" src="./media/strains1.png"/>
+            <figure>
+                <img alt="Strained Bond Lengths" src="./media/strains1.png"/>
+                <figcaption>Fig. Depictions of the 5 most strained bond lengths
+                before () and after () the refinement, residue where the strain
+                is located are depicted as sticks, rest of the protein as a
+                cartoon, atoms with the bonded strength are labeled in addition
+                to the alpha carbon of its corresponding residue.
+                </figcaption>
+            </figure>
             <table class="table table-striped">
                 <tbody>
                     <tr>
-                        <td class="org-right">ENERGY</td>
-                        <td class="org-right">BOND</td>
-                        <td class="org-left">FROM</td>
-                        <td class="org-left">TO</td>
-                        <td class="org-left">CODE</td>
-                        <td class="org-right">CB</td>
-                        <td class="org-right">BZRO</td>
+                        <td >ENERGY</td>
+                        <td >BOND</td>
+                        <td >FROM</td>
+                        <td >TO</td>
+                        <td >CODE</td>
+                        <td >CB</td>
+                        <td >BZRO</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">261.590</td>
-                        <td class="org-right">2.058</td>
-                        <td class="org-left">ARG 95  NE</td>
-                        <td class="org-left">ARG 95  CZ</td>
-                        <td class="org-left">M1A6 17</td>
-                        <td class="org-right">500.0</td>
-                        <td class="org-right">1.335</td>
+                        <td >261.590</td>
+                        <td >2.058</td>
+                        <td >ARG 95  NE</td>
+                        <td >ARG 95  CZ</td>
+                        <td >M1A6 17</td>
+                        <td >500.0</td>
+                        <td >1.335</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">227.176</td>
-                        <td class="org-right">.519</td>
-                        <td class="org-left">ARG  5  CD</td>
-                        <td class="org-left">ARG  5  NE</td>
-                        <td class="org-left">C2M1  7</td>
-                        <td class="org-right">250.0</td>
-                        <td class="org-right">1.472</td>
+                        <td >227.176</td>
+                        <td >.519</td>
+                        <td >ARG  5  CD</td>
+                        <td >ARG  5  NE</td>
+                        <td >C2M1  7</td>
+                        <td >250.0</td>
+                        <td >1.472</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">209.897</td>
-                        <td class="org-right">.687</td>
-                        <td class="org-left">ARG 42  CZ</td>
-                        <td class="org-left">ARG 42  NH1</td>
-                        <td class="org-left">A6M2 17</td>
-                        <td class="org-right">500.0</td>
-                        <td class="org-right">1.335</td>
+                        <td >209.897</td>
+                        <td >.687</td>
+                        <td >ARG 42  CZ</td>
+                        <td >ARG 42  NH1</td>
+                        <td >A6M2 17</td>
+                        <td >500.0</td>
+                        <td >1.335</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">138.158</td>
-                        <td class="org-right">1.749</td>
-                        <td class="org-left">GLU 49  CD</td>
-                        <td class="org-left">GLU 49  OE2</td>
-                        <td class="org-left">A"O" 25</td>
-                        <td class="org-right">500.0</td>
-                        <td class="org-right">1.223</td>
+                        <td >138.158</td>
+                        <td >1.749</td>
+                        <td >GLU 49  CD</td>
+                        <td >GLU 49  OE2</td>
+                        <td >A"O" 25</td>
+                        <td >500.0</td>
+                        <td >1.223</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">136.554</td>
-                        <td class="org-right">1.858</td>
-                        <td class="org-left">ARG 95  CZ</td>
-                        <td class="org-left">ARG 95  NH1</td>
-                        <td class="org-left">A6M2 17</td>
-                        <td class="org-right">500.0</td>
-                        <td class="org-right">1.335</td>
+                        <td >136.554</td>
+                        <td >1.858</td>
+                        <td >ARG 95  CZ</td>
+                        <td >ARG 95  NH1</td>
+                        <td >A6M2 17</td>
+                        <td >500.0</td>
+                        <td >1.335</td>
                     </tr>
                 </tbody>
             </table>
@@ -121,77 +132,87 @@
             </p>
         </div>
 
+        <hr>
+
         <div id="strained_angles" class="container">
             <h2>STRAINED BOND ANGLES</h2>
-            <img alt="Strained Bond Lengths" src="./media/strains2.png"/>
+            <figure>
+                <img alt="Strained Bond Angles" src="./media/strains2.png"/>
+                <figcaption>Fig. Depictions of the 5 most strained bond lengths
+                before () and after () the refinement, residue where the strain
+                is located are depicted as sticks, rest of the protein as a
+                cartoon, atoms with the bonded strength are labeled in addition
+                to the alpha carbon of its corresponding residue.
+                </figcaption>
+            </figure>
 
             <table class="table table-striped">
                 <tbody>
 
                     <tr>
-                    <td class="org-right">ENERGY</td>
-                    <td class="org-right">ANGLE</td>
-                    <td class="org-left">ATOM I</td>
-                    <td class="org-left">ATOM J</td>
-                    <td class="org-left">ATOM K</td>
-                    <td class="org-left">CODE</td>
-                    <td class="org-right">CT</td>
-                    <td class="org-right">TZRO</td>
+                    <td >ENERGY</td>
+                    <td >ANGLE</td>
+                    <td >ATOM I</td>
+                    <td >ATOM J</td>
+                    <td >ATOM K</td>
+                    <td >CODE</td>
+                    <td >CT</td>
+                    <td >TZRO</td>
                     </tr>
 
                     <tr>
-                    <td class="org-right">467.607</td>
-                    <td class="org-right">11.5</td>
-                    <td class="org-left">GLU 49  OE2</td>
-                    <td class="org-left">GLU 49  CD</td>
-                    <td class="org-left">GLU 49  OE1</td>
-                    <td class="org-left">O"A"O" 62</td>
-                    <td class="org-right">120.0</td>
-                    <td class="org-right">124.600</td>
+                    <td >467.607</td>
+                    <td >11.5</td>
+                    <td >GLU 49  OE2</td>
+                    <td >GLU 49  CD</td>
+                    <td >GLU 49  OE1</td>
+                    <td >O"A"O" 62</td>
+                    <td >120.0</td>
+                    <td >124.600</td>
                     </tr>
 
                     <tr>
-                    <td class="org-right">380.605</td>
-                    <td class="org-right">18.0</td>
-                    <td class="org-left">ARG 95  NH2</td>
-                    <td class="org-left">ARG 95  CZ</td>
-                    <td class="org-left">ARG 95  NH1</td>
-                    <td class="org-left">M2A6M2 43</td>
-                    <td class="org-right">120.0</td>
-                    <td class="org-right">120.000</td>
+                    <td >380.605</td>
+                    <td >18.0</td>
+                    <td >ARG 95  NH2</td>
+                    <td >ARG 95  CZ</td>
+                    <td >ARG 95  NH1</td>
+                    <td >M2A6M2 43</td>
+                    <td >120.0</td>
+                    <td >120.000</td>
                     </tr>
 
                     <tr>
-                    <td class="org-right">268.192</td>
-                    <td class="org-right">34.3</td>
-                    <td class="org-left">ARG  5  NH2</td>
-                    <td class="org-left">ARG  5  CZ</td>
-                    <td class="org-left">ARG  5  NH1</td>
-                    <td class="org-left">M2A6M2 43</td>
-                    <td class="org-right">120.0</td>
-                    <td class="org-right">120.000</td>
+                    <td >268.192</td>
+                    <td >34.3</td>
+                    <td >ARG  5  NH2</td>
+                    <td >ARG  5  CZ</td>
+                    <td >ARG  5  NH1</td>
+                    <td >M2A6M2 43</td>
+                    <td >120.0</td>
+                    <td >120.000</td>
                     </tr>
 
                     <tr>
-                    <td class="org-right">155.965</td>
-                    <td class="org-right">54.7</td>
-                    <td class="org-left">ARG 42  NH2</td>
-                    <td class="org-left">ARG 42  CZ</td>
-                    <td class="org-left">ARG 42  NH1</td>
-                    <td class="org-left">M2A6M2 43</td>
-                    <td class="org-right">120.0</td>
-                    <td class="org-right">120.000</td>
+                    <td >155.965</td>
+                    <td >54.7</td>
+                    <td >ARG 42  NH2</td>
+                    <td >ARG 42  CZ</td>
+                    <td >ARG 42  NH1</td>
+                    <td >M2A6M2 43</td>
+                    <td >120.0</td>
+                    <td >120.000</td>
                     </tr>
 
                     <tr>
-                    <td class="org-right">115.107</td>
-                    <td class="org-right">176.1</td>
-                    <td class="org-left">ARG 42  NE</td>
-                    <td class="org-left">ARG 42  CZ</td>
-                    <td class="org-left">ARG 42  NH2</td>
-                    <td class="org-left">M1A6M2 43</td>
-                    <td class="org-right">120.0</td>
-                    <td class="org-right">120.000</td>
+                    <td >115.107</td>
+                    <td >176.1</td>
+                    <td >ARG 42  NE</td>
+                    <td >ARG 42  CZ</td>
+                    <td >ARG 42  NH2</td>
+                    <td >M1A6M2 43</td>
+                    <td >120.0</td>
+                    <td >120.000</td>
                     </tr>
                 </tbody>
             </table>
@@ -200,88 +221,98 @@
             </p>
         </div>
 
+        <hr>
+
         <div id="strained_torsion" class="container">
             <h2>STRAINED TORSION ANGLES</h2>
-            <img alt="Strained Bond Lengths" src="./media/strains3.png"/>
+            <figure>
+                <img alt="Strained Bond Lengths" src="./media/strains3.png"/>
+                <figcaption>Fig. Depictions of the 5 most strained bond lengths
+                before () and after () the refinement, residue where the strain
+                is located are depicted as sticks, rest of the protein as a
+                cartoon, atoms with the bonded strength are labeled in addition
+                to the alpha carbon of its corresponding residue.
+                </figcaption>
+            </figure>
             <table class="table table-striped" >
                 <thread>
                     <tr>
-                        <td class="org-right">ENERGY</td>
-                        <td class="org-right">TORSION</td>
-                        <td class="org-left">ATOM I</td>
-                        <td class="org-left">ATOM J</td>
-                        <td class="org-left">ATOM K</td>
-                        <td class="org-left">ATOM L</td>
-                        <td class="org-left">CODE</td>
-                        <td class="org-right">CP</td>
-                        <td class="org-right">CPN</td>
-                        <td class="org-right">PZRO</td>
+                        <td >ENERGY</td>
+                        <td >TORSION</td>
+                        <td >ATOM I</td>
+                        <td >ATOM J</td>
+                        <td >ATOM K</td>
+                        <td >ATOM L</td>
+                        <td >CODE</td>
+                        <td >CP</td>
+                        <td >CPN</td>
+                        <td >PZRO</td>
                     </tr>
                 </thread>
                 <tbody>
                     <tr>
-                        <td class="org-right">18.684</td>
-                        <td class="org-right">104.9</td>
-                        <td class="org-left">ARG 42  CD</td>
-                        <td class="org-left">ARG 42  NE</td>
-                        <td class="org-left">ARG 42  CZ</td>
-                        <td class="org-left">ARG 42  NH2</td>
-                        <td class="org-left">C2M1A6M2 12</td>
-                        <td class="org-right">10.00</td>
-                        <td class="org-right">2.</td>
-                        <td class="org-right">.0</td>
+                        <td >18.684</td>
+                        <td >104.9</td>
+                        <td >ARG 42  CD</td>
+                        <td >ARG 42  NE</td>
+                        <td >ARG 42  CZ</td>
+                        <td >ARG 42  NH2</td>
+                        <td >C2M1A6M2 12</td>
+                        <td >10.00</td>
+                        <td >2.</td>
+                        <td >.0</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">9.662</td>
-                        <td class="org-right">-44.0</td>
-                        <td class="org-left">ARG 95  CD</td>
-                        <td class="org-left">ARG 95  NE</td>
-                        <td class="org-left">ARG 95  CZ</td>
-                        <td class="org-left">ARG 95  NH2</td>
-                        <td class="org-left">C2M1A6M2 12</td>
-                        <td class="org-right">10.00</td>
-                        <td class="org-right">2.</td>
-                        <td class="org-right">.0</td>
+                        <td >9.662</td>
+                        <td >-44.0</td>
+                        <td >ARG 95  CD</td>
+                        <td >ARG 95  NE</td>
+                        <td >ARG 95  CZ</td>
+                        <td >ARG 95  NH2</td>
+                        <td >C2M1A6M2 12</td>
+                        <td >10.00</td>
+                        <td >2.</td>
+                        <td >.0</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">6.426</td>
-                        <td class="org-right">-34.5</td>
-                        <td class="org-left">ARG  5  CD</td>
-                        <td class="org-left">ARG  5  NE</td>
-                        <td class="org-left">ARG  5  CZ</td>
-                        <td class="org-left">ARG  5  NH2</td>
-                        <td class="org-left">C2M1A6M2 12</td>
-                        <td class="org-right">10.00</td>
-                        <td class="org-right">2.</td>
-                        <td class="org-right">.0</td>
+                        <td >6.426</td>
+                        <td >-34.5</td>
+                        <td >ARG  5  CD</td>
+                        <td >ARG  5  NE</td>
+                        <td >ARG  5  CZ</td>
+                        <td >ARG  5  NH2</td>
+                        <td >C2M1A6M2 12</td>
+                        <td >10.00</td>
+                        <td >2.</td>
+                        <td >.0</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">3.994</td>
-                        <td class="org-right">-87.9</td>
-                        <td class="org-left">ARG 95  NE</td>
-                        <td class="org-left">ARG 95  NH2</td>
-                        <td class="org-left">ARG 95  CZ</td>
-                        <td class="org-left">ARG 95  NH1</td>
-                        <td class="org-left">M1M2A6M2104</td>
-                        <td class="org-right">2.00</td>
-                        <td class="org-right">2.</td>
-                        <td class="org-right">.0</td>
+                        <td >3.994</td>
+                        <td >-87.9</td>
+                        <td >ARG 95  NE</td>
+                        <td >ARG 95  NH2</td>
+                        <td >ARG 95  CZ</td>
+                        <td >ARG 95  NH1</td>
+                        <td >M1M2A6M2104</td>
+                        <td >2.00</td>
+                        <td >2.</td>
+                        <td >.0</td>
                     </tr>
 
                     <tr>
-                        <td class="org-right">3.044</td>
-                        <td class="org-right">-119.3</td>
-                        <td class="org-left">GLU 49  CG</td>
-                        <td class="org-left">GLU 49  OE2</td>
-                        <td class="org-left">GLU 49  CD</td>
-                        <td class="org-left">GLU 49  OE1</td>
-                        <td class="org-left">C2O"A"O"104</td>
-                        <td class="org-right">2.00</td>
-                        <td class="org-right">2.</td>
-                        <td class="org-right">.0</td>
+                        <td >3.044</td>
+                        <td >-119.3</td>
+                        <td >GLU 49  CG</td>
+                        <td >GLU 49  OE2</td>
+                        <td >GLU 49  CD</td>
+                        <td >GLU 49  OE1</td>
+                        <td >C2O"A"O"104</td>
+                        <td >2.00</td>
+                        <td >2.</td>
+                        <td >.0</td>
                     </tr>
                 </tbody>
             </table>
@@ -291,10 +322,18 @@
 
         <div id="montecarlo_simulation" class="container">
             <h1>Montecarlo Simulation</h1>
-            <img alt="energy_vs_step" src="./media/energy_vs_step.png"/>
+            <figure>
+                <img alt="energy_vs_step" src="./media/energy_vs_step.png"/>
+                <figcaption><strong>Fig.</strong> Graph of the calculated energy
+                in response to the number of iterations in the Montecarlo
+                simulation, left showing iterations 1 to xxx, right showing
+                iterations xxx to xxx</figcaption>
+            </figure>
         </div>
 
     </div>
+
+    <hr>
 
     </div> <!-- row container close -->
 
