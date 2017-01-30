@@ -29,6 +29,13 @@ p {
     text-indent: 20px;
 }
 
+div.scroll {
+    background-color: var(--palette-colour-5);
+    width: auto;
+    height: 100px;
+    overflow: scroll;
+}
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
     font-family: 'Noto Sans', sans-serif;
