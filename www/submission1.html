@@ -47,9 +47,10 @@
       <!-- SIDEBAR START -->
       <div class="col-md-2 sidenav">
         <div data-mh="box">
-          <p><a href="#about">About</a></p>
-          <p><a href="#chm5990">Computational Chemistry</a></p>
-          <p><a href="#contact">Contact</a></p>
+          <p><a href="#mol_viz_channel">Structure of Potassium Channel</a></p>
+          <p><a href="#mol_viz_apoptosome">Structure of the Apoptosome Complex</a></p>
+          <p><a href="#koba">Structure Refinement</a></p>
+          <p><a href="#montecarlo_simulation">Simple Monte-Carlo Simulation</a></p>
         </div>
       </div>
       <!-- SIDEBAR END -->
@@ -58,36 +59,120 @@
       <div class="col-md-10 text-left content-area">
         <div data-mh="box">
 
-          <div id="mol_viz">
+          <div id="mol_viz", class ="container">
             <h1>Molecular Visualization</h1>
-            <div id="mol_viz_channel">
+            <div id="mol_viz_channel"
+                 class="container">
               <h2>Potassium Channel</h2>
-              <figure>
-                <img alt="" src="media/sub1/sidechains.png" />
-                <figcaption>Fig.
+                <p>
+                  Biological membranes are made of phospholipids, molecules that
+                  present a large hydrophobic region and a small hydrophyllic
+                  region, this physicochemical nature, in addition to an aqueous
+                  environment favour the formation of bilayers, where the
+                  hydrophobic regions are bundled together and the hydroplillic
+                  region face the environment; Due to the large hydrophobic region
+                  highly hidrophillic compounds do not readily cross the membrane,
+                  nonetheless this permeability is necessary for some cellular
+                  processes (XXXX).
+                </p>
 
+                <p>
+                  The role of transmembrane channels is to provide stable
+                  intermediate states for molecules that would not normally cross
+                  the cell membrane lipid bilayer, where several factors that
+                  provide thermodinamical stability to this kind of molecules can
+                  be found and are evident when looking at the crystal structure
+                  of such kinds of proteins.
+                </p>
+
+                <p>
+                  The potassium channel of <strong>Streptomyces lividans </strong>
+                  is a transmembrane protein that fulfills its role as a potassium
+                  specific channel, as such there are several characteristics
+                  inherent to it that are found to be extremely interesting that
+                  allow this protein to fulfill its biological role.
+                </p>
+
+                <p>
+                  First of all, for the channel to perform its function, it must
+                  be inserted in the cell membrane, and as such it must stabilize
+                  its pressence in the membrane by associating its exterior, on
+                  the sides with the hydrophobic tails of the membrane and the
+                  lipids, which can be seen in <strong>Figure 1</strong> where it
+                  is evident that aminoacids sidechains exposed to the lipid
+                  bilayer are of hydripobic nature and the ones exposed to the
+                  aqueous environment are of hydriphillic nature, interestingly
+                  sidechains in the inteface region are of amphipatic nature,
+                  where one region of the side chain is hydropboic but also
+                  posseses a region where hydrogen bonding could be carried out
+                  with the environment.
+                </p>
+
+                <p>
+                  In addition it is possible to appreciate that the channel is
+                  formed by four monomeric units, that ensemble due to shape
+                  complementarity in addition to hydrophobic interactions among
+                  the subunits <strong>Fig.2</strong>.
+                </p>
+
+                <p>
+                  Regarding the channel properties of the protein it is necesarry
+                  to note the interactions that stabilize charged ions in a
+                  hydrohobic space, where energy must be compensated for the
+                  desolvation of ions, this is carried out in two different
+                  regions of the channel, <strong>Fig 3</strong> shows how the
+                  ions are selected on the basis of their charge and size by
+                  interacting in a narrow groove that stabilizes ions by
+                  interacting with the oxygen atoms in the backbone protein's
+                  backbone. In addition, past the selectivity filter, it is
+                  possible to show how the net dipolar moment of alpha helices
+                  also stabilizes the ions in an aqueous cavity in the multimer
+                  (due to the ordered peptide bonds in the structure's backbone).
+                </p>
+              </p>
+
+              <figure>
+                <img alt="membrane stabilization of potassium channel"
+                     src="media/sub1/sidechains.png" />
+                <figcaption><strong>Fig. Side chains of the potassium
+                channel, only whowing stick representations of opposing subunits
+                and aminoacids colored by their hydrophobicity (Hydrophillic in
+                magenta, hydrophobic in cyan and amphipatic in green)</strong>
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img alt="multimerization regions of potassium channel"
+                     src="media/sub1/surface_contacts.png" />
+                <figcaption><strong>Fig. 2</strong> Figure showing the contact
+                region of two adjacent monomers of this potassium channel.
+                Making evident the regions where aminoacids are in less than 4A
+                of proximity (gray dashed lines), right side shows the relative
+                conformation to the rest of the multimer and left showing
+                surface representation of one monomer and strick representation
+                of the adjacent where it is evident the shape complementarity in
+                the monomeric units.
+                </figcaption>
+              </figure>
+
+              <figure>
+                <img alt="selectivity_filter" src="/media/sub1/vmdscene1.png" />
+                <figcaption><strong>Fig. 3</strong> Region known as the
+                selectivity filter, showing the stabilization of potassium ions
+                (orange spheres) by the oxigen atoms (red sticks) in the
+                backbone of the protein subunits.
                 </figcaption>
               </figure>
               <figure>
-                <img alt="" src="media/sub1/surface_contacts.png" />
-                <figcaption>Fig.
-
-                </figcaption>
-              </figure>
-              <figure>
-                <img alt="" src="" />
-                <figcaption>Fig.
-
-                </figcaption>
-              </figure>
-              <figure>
-                <img alt="" src="" />
-                <figcaption>Fig.
-
+                <img alt="dipole_stabilization" src="/media/sub1/vmdscene2.png" />
+                <figcaption><strong>Fig. 4</strong> Display of the alpha helices
+                (blue cylinders) that stabilize the unordered K ions in the
+                queous cavity of the chanel.
                 </figcaption>
               </figure>
             </div>
-            <div id="mol_viz_apoptosome">
+            <div id="mol_viz_apoptosome"
+                 class="container">
               <h2>Apoptosome</h2>
               <figure>
                 <img alt="" src="" />
@@ -118,20 +203,35 @@
           </div>
           <hr>
 
-          <div id="koba" class="container">
+          <div id="koba"
+               class="container">
             <h1>Structure Refinement</h1>
-            <div id="structures" class="container">
+            <p>
+              The structure of the monomeric form of the potassium channel was
+              submitted to KoBa-Min server for refinement via energy
+              optimization (Rodrigues, Levitt and Chopra, 2012) where a dramatic
+              increase in free energy was achievable, mainly by the addition of
+              missing residues in the initial structure and refinement of bond
+              lengths and andgles in the side chains of the aminoacid residues.
+              As a remark it is to note that most of the missing residues where
+              of hydrophillic nature, which are hard to cristalize properly in
+              the contect of a membrane protein, since the majority of its
+              composition is hydrophobic in nature.
+            </p>
+
+            <div id="structures"
+                 class="container">
 
               <h2>Final (refined) Structure</h2>
               <figure>
                 <img alt="overlap" src="media/sub1/overlap_3.png"/>
-                <figcaption> Fig. Overlap of the unrefined (Cyan) and refined
+                <figcaption> <strong>Fig. B1 Overlap</strong> of the unrefined (Cyan) and refined
                   (Magenta) structures Fig. Comparisson of original structure (Cyan) and the refined version (Magenta)
                 </figcaption>
               </figure>
               <hr>
 
-              <h2>Protein Sequence</h2>
+              <h2>Aminoacid Sequence of the submited structure</h2>
               <div class="scroll">
                 <p>
                   ALA LEU HIS TRP ARG ALA ALA GLY ALA ALA THR VAL LEU LEU VAL ILE VAL LEU LEU ALA
@@ -142,63 +242,83 @@
                 </p>
               </div>
 
+              <div>
+                <table class="table table-striped">
+                  <tbody>
+                    <thead>
+                      <tr>
+                        <th>Initial Energy</th>
+                        <th>Final Energy After Refinement</th>
+                        <th>Run time</th>
+                      </tr>
+                    </thead>
+                  <tr>
+                    <td>3959.4600</td>
+                    <td>-3073.5104</td>
+                    <td>14 s</td>
+                  </tr>
+                  </tbody>
+                </table>
 
-              <table class="table table-striped">
-                <tbody>
-                  <thead>
-                    <tr>
-                      <th>Initial Energy</th>
-                      <th>Final Energy After Refinement</th>
-                    </tr>
-                  </thead>
-                <tr>
-                  <td>3959.4600</td>
-                  <td>-3073.5104</td>
-                </tr>
-                </tbody>
-              </table>
+                <p>
+                  Here it is shown that the free energy was dramatically
+                  decreased by the refinement process, hereby producing a much
+                  more thermodinamically stable structure.
+                </p>
+                <br/>
 
+                <p>
+                  Nonetheless it is to note that most of
+                  this changes are not shown as large movements in the protein
+                  backbone <strong>Fig B1</strong>, but are due to changes in
+                  the aminoacid sidechains, in particular for aminoacids that
+                  where not camputed initially in the crystal structure (initial
+                  .pdb file)
+                </p>
+              </div>
             <hr>
 
             </div>
             <hr>
 
-            <div id="strained_lengths" class="container">
+            <div id="strained_lengths"
+                 class="container">
 
               <h2>MOST STRAINED BOND LENGTHS</h2>
               <table class="table table-striped">
                 <tbody>
                   <thead>
-                  <tr>
-                    <th>ENERGY</th> <th>BOND</th> <th>FROM</th> <th>TO</th> <th>CODE</th> <th>CB</th> <th>BZRO</th>
-                  </tr>
+                    <tr>
+                      <th>ENERGY</th> <th>BOND</th> <th>FROM</th> <th>TO</th> <th>CODE</th> <th>CB</th> <th>BZRO</th>
+                    </tr>
                   </thead>
 
                   <tbody>
                     <tr>
-
-                  <td>.410</td><td>1.485</td><td>LEU 18  CA</td><td>LEU 18  C</td><td>C1A' 10</td><td>250.0</td><td>1.526</td></tr>
-
-                  <tr>
-                  <td>.283</td><td>1.491</td><td>ALA 43  CA</td><td>ALA 43  CB</td><td>C1C3  8</td><td>250.0</td><td>1.525</td></tr>
-
-                  <tr>
-                  <td>.261</td><td>1.494</td><td>SER 80  CA</td><td>SER 80  C</td><td>C1A' 10</td><td>250.0</td><td>1.526</td></tr>
-
-                  <tr>
-                  <td>.255</td><td>1.557</td><td>THR 63  CA</td><td>THR 63  CB</td><td>C1C1  8</td><td>250.0</td><td>1.525</td></tr>
-
-                  <tr>
-                  <td>.253</td><td>1.344</td><td>ARG 67  C</td><td>CYH 68  N</td><td>A'N1 15</td><td>500.0</td><td>1.322</td></tr>
+                      <td>.410</td><td>1.485</td><td>LEU 18  CA</td><td>LEU 18  C</td><td>C1A' 10</td><td>250.0</td><td>1.526</td>
+                    </tr>
+                    <tr>
+                      <td>.283</td><td>1.491</td><td>ALA 43  CA</td><td>ALA 43  CB</td><td>C1C3  8</td><td>250.0</td><td>1.525</td>
+                    </tr>
+                    <tr>
+                      <td>.261</td><td>1.494</td><td>SER 80  CA</td><td>SER 80  C</td><td>C1A' 10</td><td>250.0</td><td>1.526</td>
+                    </tr>
+                    <tr>
+                      <td>.255</td><td>1.557</td><td>THR 63  CA</td><td>THR 63  CB</td><td>C1C1  8</td><td>250.0</td><td>1.525</td>
+                    </tr>
+                    <tr>
+                      <td>.253</td><td>1.344</td><td>ARG 67  C</td><td>CYH 68  N</td><td>A'N1 15</td><td>500.0</td><td>1.322</td>
+                    </tr>
                 </tbody>
               </table>
               <p>
-                TOTAL BOND ENERGY EXCLUDING WATER MOLECULES IS       18.67
+                TOTAL BOND ENERGY EXCLUDING WATER MOLECULES IS 18.67 (Initial = 1526.52)
               </p>
             </div>
             <hr>
 
-            <div id="strained_angles" class="container">
+            <div id="strained_angles"
+                 class="container">
               <h2>STRAINED BOND ANGLES</h2>
 
               <table class="table table-striped">
@@ -212,87 +332,83 @@
                   <tr>
                     <td>2.315</td><td>120.4</td><td>THR 90  N</td><td>THR 90  CA</td><td>THR 90  CB</td><td>N1C1C1 21</td><td>60.0 109.100</td>
                   </tr>
-
                   <tr>
                     <td>2.182</td><td>122.3</td><td>GLU 49  CA</td><td>GLU 49  CB</td><td>GLU 49  CG</td><td>C1C2C2 24</td><td>60.0 111.400</td>
                   </tr>
-
                   <tr>
                     <td>1.798</td><td>120.0</td><td>VAL 73  C</td><td>VAL 73  CA</td><td>VAL 73  CB</td><td>A'C1C1 25</td><td>60.0 110.100</td>
                   </tr>
-
                   <tr>
                     <td>1.490</td><td>119.1</td><td>LEU 27  C</td><td>LEU 27  CA</td><td>LEU 27  CB</td><td>A'C1C2 25</td><td>60.0 110.100</td>
                   </tr>
-
                   <tr>
                     <td>1.483</td><td>101.1</td><td>GLU 49  C</td><td>GLU 49  CA</td><td>GLU 49  CB</td><td>A'C1C2 25</td><td>60.0 110.100</td>
                   </tr>
                </tbody>
               </table>
               <p>
-              TOTAL ANGLE ENERGY EXCLUDING WATERS IS       98.66
+                TOTAL ANGLE ENERGY EXCLUDING WATERS IS 98.66 (Initial = 2225.14)
               </p>
 
             </div>
             <hr>
 
-            <div id="strained_torsion" class="container">
+            <div id="strained_torsion"
+                 class="container">
               <h2>STRAINED TORSION ANGLES</h2>
               <table class="table table-striped">
                 <thead>
                   <tr>
                     <th>ENERGY</th> <th>TORSION</th> <th>ATOM I</th> <th>ATOM J</th> <th>ATOM K</th> <th>ATOM L</th> <th>CODE</th> <th>CP</th> <th>CPN</th> <th>PZRO</th>
-                </tr>
+                  </tr>
                 </thead>
                 <tbody>
-                <tr>
-                  <td>2.795</td><td>-118.4</td><td>GLU 29  CA</td><td>GLU 29  CB</td><td>GLU 29  CG</td><td>GLU 29  CD</td><td>C1C2C2A 4</td><td>1.40</td><td>3.</td><td>60.0</td>
-                </tr>
-
-                <tr>
-                  <td>2.672</td><td>-8.2</td><td>THR 90  N</td><td>THR 90  CA</td><td>THR 90  CB</td><td>THR 90  CG2</td><td>N1C1C1C3  4</td><td>1.40</td><td>3.</td><td>60.0</td>
-                </tr>
-
-                <tr>
-                  <td>2.637</td><td>-159.1</td><td>GLU 29  CA</td><td>GLU 29  C</td><td>ARG 30  N</td><td>ARG 30  CA</td><td>C1A'N1C1 25</td><td>40.00</td><td>1.</td><td>180.0</td>
-                </tr>
-
-                <tr>
-                  <td>2.398</td><td>-134.8</td><td>TRP  4  N</td><td>TRP  4  CA</td><td>TRP  4  CB</td><td>TRP  4  CG</td><td>N1C1C2A5  4</td><td>1.40</td><td>3.</td><td>60.0</td>
-                </tr>
-
-                <tr>
-                  <td>2.284</td><td>-103.1</td><td>LEU 88  N</td><td>LEU 88  CA</td><td>LEU 88  CB</td><td>LEU 88  CG</td><td>N1C1C2C1  4</td><td>1.40</td><td>3.</td><td>60.0</td>
-                </tr>
+                  <tr>
+                    <td>2.795</td><td>-118.4</td><td>GLU 29  CA</td><td>GLU 29  CB</td><td>GLU 29  CG</td><td>GLU 29  CD</td><td>C1C2C2A 4</td><td>1.40</td><td>3.</td><td>60.0</td>
+                  </tr>
+                  <tr>
+                    <td>2.672</td><td>-8.2</td><td>THR 90  N</td><td>THR 90  CA</td><td>THR 90  CB</td><td>THR 90  CG2</td><td>N1C1C1C3  4</td><td>1.40</td><td>3.</td><td>60.0</td>
+                  </tr>
+                  <tr>
+                    <td>2.637</td><td>-159.1</td><td>GLU 29  CA</td><td>GLU 29  C</td><td>ARG 30  N</td><td>ARG 30  CA</td><td>C1A'N1C1 25</td><td>40.00</td><td>1.</td><td>180.0</td>
+                  </tr>
+                  <tr>
+                    <td>2.398</td><td>-134.8</td><td>TRP  4  N</td><td>TRP  4  CA</td><td>TRP  4  CB</td><td>TRP  4  CG</td><td>N1C1C2A5  4</td><td>1.40</td><td>3.</td><td>60.0</td>
+                  </tr>
+                  <tr>
+                    <td>2.284</td><td>-103.1</td><td>LEU 88  N</td><td>LEU 88  CA</td><td>LEU 88  CB</td><td>LEU 88  CG</td><td>N1C1C2C1  4</td><td>1.40</td><td>3.</td><td>60.0</td>
+                  </tr>
                </tbody>
-             </table>
+              </table>
             </div>
             <hr>
 
-            <div>
+            <div id="phi-psi"
+                 class="container">
               <h2>STRAINED PHI-PSI ANGLES</h2>
               <table class="table table-striped">
-<thead>
-<tr>
-<th>ENERGY</th> <th>PHI</th> <th>PSI</th> <th>ATOM I</th> <th>ATOM J</th> <th>ATOM K</th> <th>ATOM L</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>.000</td><td>-137.0</td><td>-47.6</td><td>ALA  1  C</td><td>LEU  2  N</td><td>LEU  2  CA</td><td>LEU  2  C</td></tr>
-
-<tr>
-<td>.000</td><td>-73.0</td><td>-23.1</td><td>LEU  2  C</td><td>HIS  3  N</td><td>HIS  3  CA</td><td>HIS  3  C</td></tr>
-
-<tr>
-<td>.000</td><td>-94.2</td><td>-15.8</td><td>HIS  3  C</td><td>TRP  4  N</td><td>TRP  4  CA</td><td>TRP  4  C</td></tr>
-
-<tr>
-<td>.000</td><td>-99.4</td><td>-18.8</td><td>TRP  4  C</td><td>ARG  5  N</td><td>ARG  5  CA</td><td>ARG  5  C</td></tr>
-
-<tr>
-<td>.000</td><td>-72.5</td><td>-32.9</td><td>ARG  5  C</td><td>ALA  6  N</td><td>ALA  6  CA</td><td>ALA  6  C</td></tr>
+                <tbody>
+                  <thead>
+                    <tr>
+                      <th>ENERGY</th> <th>PHI</th> <th>PSI</th> <th>ATOM I</th> <th>ATOM J</th> <th>ATOM K</th> <th>ATOM L</th>
+                    </tr>
+                  </thead>
+                  <tr>
+                    <td>.000</td><td>-137.0</td><td>-47.6</td><td>ALA  1  C</td><td>LEU  2  N</td><td>LEU  2  CA</td><td>LEU  2  C</td>
+                  </tr>
+                  <tr>
+                    <td>.000</td><td>-73.0</td><td>-23.1</td><td>LEU  2  C</td><td>HIS  3  N</td><td>HIS  3  CA</td><td>HIS  3  C</td>
+                  </tr>
+                  <tr>
+                    <td>.000</td><td>-94.2</td><td>-15.8</td><td>HIS  3  C</td><td>TRP  4  N</td><td>TRP  4  CA</td><td>TRP  4  C</td>
+                  </tr>
+                  <tr>
+                    <td>.000</td><td>-99.4</td><td>-18.8</td><td>TRP  4  C</td><td>ARG  5  N</td><td>ARG  5  CA</td><td>ARG  5  C</td>
+                  </tr>
+                  <tr>
+                    <td>.000</td><td>-72.5</td><td>-32.9</td><td>ARG  5  C</td><td>ALA  6  N</td><td>ALA  6  CA</td><td>ALA  6  C</td>
+                    </tr>
+                <tbody>
               </table>
             </div>
             <hr>
@@ -303,23 +419,31 @@
           <div id="montecarlo_simulation" class="container">
             <h1>MonteCarlo Simulation</h1>
             <div class="container">
-              <h2>Final Iterations</h2>
+              <h2>Energy vs Monte Carlo step</h2>
               <figure>
                 <img alt="Distribution of final Iterations"
                      src="./media/sub1/final_step.png"
                      width=700 />
-                <figcaption>Distribution of the energy states in the last 2000
-                steps of a 2-million iteration simulation</figcaption>
+                <figcaption>
+                  Distribution of the energy states in the last 2000 steps of a
+                  2-million iteration simple Monte Carlo simulation,
+
+                </figcaption>
               </figure>
-            </div>
+            </
 
             <div class="container">
               <figure>
                 <img alt="Final Energy vs Temp"
                      src="./media/sub1/f_energy_vs_Temp.png"
                      height=300/>
-                <figcaption>Final Energy in function of the temperature
-                parameter used in the simulation</figcaption>
+                <figcaption>
+                  Final Energy in function of the temperature and the step size,
+                  where it is posible to show that there is no evident
+                  relationship in the step size used but there is an evident
+                  relationship with the temperature <br/>
+
+                </figcaption>
               </figure>
             </div>
 
