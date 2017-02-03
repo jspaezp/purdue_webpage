@@ -29,10 +29,9 @@
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="./index.html">Home</a></li>
-          <!-- <li><a href="#">About</a></li>
-             <li><a href="#">CHM 5990</a></li>
-             <li><a href="#">Contact</a></li> -->
+          <li class="active"><a href="index.html">Home</a></li>
+          <!-- <li><a href="#">CHM 5990</a></li>
+               <li><a href="#">Contact</a></li>  -->
         </ul>
       </div>
     </div>
@@ -48,8 +47,11 @@
       <div class="col-md-2 sidenav">
         <div data-mh="box">
           <p><a href="#mol_viz_channel">Structure of Potassium Channel</a></p>
+          <hr/>
           <p><a href="#mol_viz_apoptosome">Structure of the Apoptosome Complex</a></p>
+          <hr/>
           <p><a href="#koba">Structure Refinement</a></p>
+          <hr/>
           <p><a href="#montecarlo_simulation">Simple Monte-Carlo Simulation</a></p>
         </div>
       </div>
@@ -73,7 +75,7 @@
                   region face the environment; Due to the large hydrophobic region
                   highly hidrophillic compounds do not readily cross the membrane,
                   nonetheless this permeability is necessary for some cellular
-                  processes (XXXX).
+                  processes.
                 </p>
 
                 <p>
@@ -82,15 +84,16 @@
                   the cell membrane lipid bilayer, where several factors that
                   provide thermodinamical stability to this kind of molecules can
                   be found and are evident when looking at the crystal structure
-                  of such kinds of proteins.
+                  of such kinds of proteins (Choe, 2002).
                 </p>
 
                 <p>
-                  The potassium channel of <strong>Streptomyces lividans </strong>
-                  is a transmembrane protein that fulfills its role as a potassium
-                  specific channel, as such there are several characteristics
-                  inherent to it that are found to be extremely interesting that
-                  allow this protein to fulfill its biological role.
+                  The potassium channel of <strong>Streptomyces lividans
+                  </strong> is a transmembrane protein that fulfills its role as
+                  a potassium specific channel, as such there are several
+                  characteristics inherent to it that are found to be extremely
+                  interesting that allow this protein to fulfill its biological
+                  role (Doyle, et.al 1998).
                 </p>
 
                 <p>
@@ -134,10 +137,10 @@
               <figure>
                 <img alt="membrane stabilization of potassium channel"
                      src="media/sub1/sidechains.png" />
-                <figcaption><strong>Fig. Side chains of the potassium
+                <figcaption><strong>Fig.1</strong> Side chains of the potassium
                 channel, only whowing stick representations of opposing subunits
                 and aminoacids colored by their hydrophobicity (Hydrophillic in
-                magenta, hydrophobic in cyan and amphipatic in green)</strong>
+                magenta, hydrophobic in cyan and amphipatic in green)
                 </figcaption>
               </figure>
 
@@ -156,7 +159,7 @@
               </figure>
 
               <figure>
-                <img alt="selectivity_filter" src="/media/sub1/vmdscene1.png" />
+                <img alt="selectivity_filter" src="media/sub1/vmd_scene1.png" />
                 <figcaption><strong>Fig. 3</strong> Region known as the
                 selectivity filter, showing the stabilization of potassium ions
                 (orange spheres) by the oxigen atoms (red sticks) in the
@@ -164,38 +167,82 @@
                 </figcaption>
               </figure>
               <figure>
-                <img alt="dipole_stabilization" src="/media/sub1/vmdscene2.png" />
+                <img alt="dipole_stabilization" src="media/sub1/vmd_scene2.png" />
                 <figcaption><strong>Fig. 4</strong> Display of the alpha helices
                 (blue cylinders) that stabilize the unordered K ions in the
                 queous cavity of the chanel.
                 </figcaption>
               </figure>
             </div>
+
             <div id="mol_viz_apoptosome"
                  class="container">
               <h2>Apoptosome</h2>
-              <figure>
-                <img alt="" src="" />
-                <figcaption>Fig.
+              <p>
+                Apoptosis is a highly regulated process that involves the
+                organized killing of a cell by a series of proteins in a cell
+                called caspases. One of the main regulators of the process is
+                the assembly of the structure known as the apoptosome, which is
+                a large heptameric structure composed of Apaf-1 (apoptosis
+                protease activating factor 1) and cytochrome c (Fig. 5), whose function
+                lies in the later activation of the pro-caspase 9 to start
+                programed cell death (Yuan, 2013a).
+              </p>
 
+              <p>
+                In order to fulfill its function the complex must assamble form
+                its constitutive components, by which Cytochrome C, which is
+                originally present in the mitochondria, binds to the loop
+                regions of two beta-propeller structures in APAF1 (Fig 6). For
+                the stabilization of this complex a heme group there are a
+                series of reactions that need to take place, where APAF1 needs
+                ATP to oligomerize and start the complex formation (Yuan,
+                2013b), this ATP molecule binds deeply into the molecule with
+                its purine side while exposing the phosphates to the exterior,
+                which then is occluded by other members of the protein, now
+                shown (Fig 7).
+              </p>
+
+              <p>
+                Once the initial interaction between Cytochrome C and APAF1 has
+                taken place the pressence of a heme molecule in the Cytochrome
+                is (suspected to be) needed to carry out an aminoacid exchange
+                and acquire a functional conformation.
+              </p>
+              <figure>
+                <img alt="Heptameric Apoptosme" src="media/sub1/heptamer.png" />
+                <figcaption>
+                  <strong>Fig. 5</strong> Heptameric form of the modelled human
+                  apoptosome, showing she small cytochrome C subunits bound to
+                  the APAF-1 subunits, forming a plataform-like structure.
                 </figcaption>
               </figure>
               <figure>
-                <img alt="" src="" />
-                <figcaption>Fig.
-
+                <img alt="Beta Propellers" src="media/sub1/dimerization.png" />
+                <figcaption>
+                  <strong>Fig. 6</strong> Dimerization of Cytochrome C and APAF1
+                  involves interactions with the beta propellers structure of
+                  APAF1 (red and green areas) and Cytochrome C (blue).
                 </figcaption>
               </figure>
               <figure>
-                <img alt="" src="" />
-                <figcaption>Fig.
-
+                <img alt="ATP binding sites" src="media/sub1/atp_site.png" />
+                <figcaption>
+                  <strong>Fig. 7</strong> ATP binding site of APAF1, showing the
+                  deep cavity where the purine region of ATP (magenta) is
+                  burried and exposing the phosphate groups (orange-red),
+                  hydrogen-bond interactions stabilizing this structure are
+                  shown as dashed yellow lines.
                 </figcaption>
               </figure>
               <figure>
-                <img alt="" src="" />
-                <figcaption>Fig.
-
+                <img alt="Heme Group" src="media/sub1/heme_group.png" />
+                <figcaption>
+                  <strong>Fig. 8</strong> Heme group (magenta) burried deeply
+                  into the Cytochrome C molecule, where one can note the
+                  internal hydrogen bonds stabilizing the interaction as yellow
+                  dashed lines and two strong interactions with a pair of
+                  sulphur molecules in the center of the protein.
                 </figcaption>
               </figure>
             </div>
@@ -421,40 +468,102 @@
             <div class="container">
               <h2>Energy vs Monte Carlo step</h2>
               <figure>
-                <img alt="Distribution of final Iterations"
-                     src="./media/sub1/final_step.png"
-                     width=700 />
+                <img alt="Energy Distribution in initial Iterations"
+                     src="media/sub1/initial_step_energy.png"
+                     width=650 />
                 <figcaption>
-                  Distribution of the energy states in the last 2000 steps of a
-                  2-million iteration simple Monte Carlo simulation,
-
+                  <strong>Figure C1.</strong> Distribution of the measured free
+                  energy during the first 120 steps of the simple Monte Carlo,
+                  where it is evident the tendency of larger step sizes to
+                  stabilize faster (magenta), while smaller step sizes (orange)
+                  have the tendency to stay in higher energy states for a higher
+                  ammount of iterations, this due to periods of stability in
+                  local minima for the systems free energy.
                 </figcaption>
               </figure>
-            </
+            </div>
+
+            <div class="container">
+              <h2>Energy vs Monte Carlo step</h2>
+              <figure>
+                <img alt="Energy distribution during final Iterations"
+                     src="media/sub1/final_step.png"
+                     width=800 />
+                <figcaption>
+                  <strong>Figure C2.</strong> Distribution of the energy states
+                  in the last 2000 steps of a 2-million iteration simple Monte
+                  Carlo simulation for 10 replicates, 4 different step sizes
+                  (panes) and 4 different temperature settings (colours),
+                  showing how smaller step sizes do not drastically change the
+                  mean final energy (between-run mean energy) of the sistem but
+                  they do change distribution of the the energies (within-run
+                  variation), where smaller step sizes stabilize in narrower
+                  windows of local minima.
+                </figcaption>
+              </figure>
+            </div>
 
             <div class="container">
               <figure>
                 <img alt="Final Energy vs Temp"
-                     src="./media/sub1/f_energy_vs_Temp.png"
-                     height=300/>
+                     src="media/sub1/f_energy_vs_Temp.png"
+                     width=400/>
                 <figcaption>
-                  Final Energy in function of the temperature and the step size,
-                  where it is posible to show that there is no evident
-                  relationship in the step size used but there is an evident
-                  relationship with the temperature <br/>
-
+                  <strong>Figure C3.</strong> Final Energy in function of the
+                  temperature and the step size (50 replicates and 2 milliion
+                  monte carlo steps), Where it is posible to show that there is
+                  no evident relationship in the step size used but there is an
+                  evident relationship with the temperature, suggesting that
+                  with enough time every step size could get to the minimum
+                  energy, and that this energy is dependent on the temperature;
+                  this is expected when one considers temperature as a measure
+                  of the internal energy of a substance, where a higher
+                  temperature setting would involve a higher free energy in the
+                  system.
+                  <br/>
                 </figcaption>
               </figure>
             </div>
 
-            <div class="container">
-              <figure>
-                <img alt="energy_vs_step" src="./media/sub1/energy_vs_step.png" />
-                <figcaption><strong>Fig.</strong> Graph of the calculated energy in response to the number of iterations in the Montecarlo simulation, left showing iterations 1 to xxx, right showing iterations xxx to xxx</figcaption>
-              </figure>
-            </div>
           </div>
           <hr>
+
+          <div id="references" class="container">
+            <h1>References</h1>
+
+            <div id="references" class="container">
+              <p>
+                <strong>Doyle, D. A., Cabral, J. M., Pfuetzner, R. A., Kuo, A., Gulbis,
+                J. M., Cohen, S. L., … MacKinnon, R. (1998)</strong>. The structure of
+                the potassium channel: molecular basis of K+ conduction and
+                selectivity. Science (New York, N.Y.), 280(5360), 69–77.
+                https://doi.org/10.1126/science.280.5360.69
+              </p>
+              <p>
+                <strong>Choe, S. (2002)</strong>. Ion Channel Structurepotassium
+                Channel Structures. Nature Reviews Neuroscience, 3(2), 115–121.
+                https://doi.org/10.1038/nrn727
+              </p>
+              <p>
+                <strong>Rodrigues, J. P. G. L. M., Levitt, M., & Chopra, G. (2012)</strong>.
+                KoBaMIN: A knowledge-based minimization web server for protein
+                structure refinement. Nucleic Acids Research, 40(W1), 323–328.
+                https://doi.org/10.1093/nar/gks376
+              </p>
+              <p>
+                <strong>Yuan, S., & Akey, C. W. (2013a)</strong>. Apoptosome structure, assembly,
+                and procaspase activation. Structure, 21(4), 501–515.
+                https://doi.org/10.1016/j.str.2013.02.024
+              </p>
+              <p>
+                <strong>Yuan, S., Topf, M., Reubold, T. F., Eschenburg, S., & Akey, C.
+                W. (2013b)</strong>. Changes in Apaf-1 Conformation That Drive Apoptosome
+                Assembly. Biochemistry, 52(13), 2319–2327.
+                https://doi.org/10.1021/bi301721g
+              </p>
+            </div>
+          </div>
+          <hr/>
 
         </div>
       </div>
