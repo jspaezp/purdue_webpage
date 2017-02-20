@@ -66,6 +66,23 @@ footer {
     padding: 15px;
 }
 
+.img-fluid {
+    max-width: 90%;
+    height: auto;
+}
+
+.facet-img-fluid-right {
+    @include float-right;
+    max-width: 48%;
+    height: auto;
+}
+
+.facet-img-fluid-left {
+    @include float-left;
+    max-width: 48%;
+    height: auto;
+
+
 @media(min-width : 750px){
   .row-eq-height{
     display: -webkit-box;
