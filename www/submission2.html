@@ -1,4 +1,4 @@
- <!DOCTYPE HTML>
+<!DOCTYPE HTML>
 <html>
 
 <head>
@@ -269,7 +269,7 @@
               <p>
                 From the ensambles we where able to note several properties that
                 changed with the changes in temperature of the system, at first
-                one can note that 
+                one can note that XXXX
               </p>
 
               <figure class="img-fluid">
@@ -336,18 +336,68 @@
                 </table>
               </div>
 
-              <h3>Measurement of the diffussion coefficient</h3>
-              <p>
-
-
-              </p>
-
-
               <hr/>
             </div>
             <div id="simulation_carbon"
                  class="container-fluid">
+
               <h2>Molecular Dynamics of Carbon Dioxide</h2>
+
+              <p>
+                The modelling of liquid CO2 gets to be challenging in several
+                regards, first of all, it is necessary to restrict the posible
+                conformations of the molecule for it to ressemble the native
+                conformation as a plannar molecule, and in addition the fact
+                that CO2 only acquires its liquid state at high pressure makes
+                the equilibration steps challenging to accomplish.
+              </p>
+
+              <h3>Approach to model the molecule</h3>
+
+              <p>
+                Several modifications where made from the molecular dinamics
+                parameters files published originally for argon molecules in
+                order to make the model viable (not crash at least); Importantly
+                it was required to change the reference pressure of the system;
+                since liquid argon is obtainable at lower pressures as the ones
+                required for CO2, on the other hand since higher temperatures
+                are also required, the overall system changes much more rapidly
+                than the case of Argon and as such a much finer equilibration
+                ois necessary, since large step sizes and coupling coefficents
+                (tau_p and tau_t) lead to the crash of the system (makes it
+                'explote').
+
+                It was proven to be of ulterior importance the need to
+                explicitly exclude interactions within our molecule, due to the
+                fact that the lack of bonds that was usefull to state the
+                planarity of the molecule does not exclude them from interacting
+                electrostatically with each other.
+              </p>
+
+              <p>
+                As a concluding remark it is to note that most likely this model
+                is not accurate and most certainly does not resemble the
+                behaviour of liquid CO2, nonetheless it proved to be an really
+                interesting tool to verify the importance of sequential and
+                carefully chosen equilibration steps to generate a measurable
+                system.
+              </p>
+
+
+              <figure class="img-fluid">
+
+                <img alt="Co2 temp stabilization"
+                     class="facet-img-fluid-left"
+                     src="media/sub2/co2_temp_stabilization.gif" />
+                <img alt="co2 annealing"
+                     class="facet-img-fluid-right"
+                     src="media/sub2/co2_pressure_stabilization.gif" />
+                <figcaption><strong>Fig C1</strong> Figure depicting the two
+                     main stages in the stabilization of the molecules of co2 in
+                     our model
+                </figcaption>
+              </figure>
+
               <figure class="img-fluid">
                 <img alt="co2 annealing"
                      class="img-fluid"
@@ -355,17 +405,12 @@
                 <img alt="co2 annealing"
                      class="img-fluid"
                      src="media/sub2/co2_rightis_end_annealing_2.gif" />
-                <figcaption><strong>Fig C1</strong> Figure depicting the
+                <figcaption><strong>Fig C2</strong> Figure depicting the
                 movement of CO2 molecules at 250K (left) and 200k (right) four
                 molecules where randomly chosen and coloured to facilitate
                 visual tracking, bottom section is only the coloured molecules
                 </figcaption>
               </figure>
-                <p>
-
-                </p>
-                <h3>Approach to model the molecule</h3>
-                <h3></h3>
             </div>
           </div>
 
