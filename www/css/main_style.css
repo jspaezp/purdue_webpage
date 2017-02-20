@@ -36,6 +36,12 @@ div.scroll {
     overflow: scroll;
 }
 
+.container {
+    max-width: 70em;
+    width: inherit;
+    @include make-container();
+}
+
 /* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
     font-family: 'Noto Sans', sans-serif;
@@ -67,20 +73,28 @@ footer {
 }
 
 .img-fluid {
+    @include float-none;
     max-width: 90%;
+    max-height: 450px;
     height: auto;
+    width: auto;
 }
 
 .facet-img-fluid-right {
     @include float-right;
+    max-height: 450px;
     max-width: 48%;
     height: auto;
+    width: auto;
 }
 
 .facet-img-fluid-left {
     @include float-left;
+    max-height: 450px;
     max-width: 48%;
     height: auto;
+    width: auto;
+}
 
 
 @media(min-width : @screen-sm-min){

@@ -141,7 +141,7 @@
                 computer).
               </p>
 
-              <figure class="img-fluid">
+              <div class="container">
                 <img alt="Energy vs Step"
                      class="facet-img-fluid-left"
                      src="media/sub2/energies_a1.png" />
@@ -150,9 +150,11 @@
                      src="media/sub2/pressures_a1.png" />
                 <figcaption>Fig A1. Initial observation of Pressure and Energy
                 in function of the Monte Carlo step.</figcaption>
-              </figure>
+              </div>
 
-              <figure class="img-fluid" >
+              
+
+              <div class="container">
                 <img alt="Energy vs Step"
                      class="facet-img-fluid-left"
                      src="media/sub2/energies_a2.png" />
@@ -160,11 +162,13 @@
                      class="facet-img-fluid-right"
                      src="media/sub2/pressures_a2.png" />
                 <figcaption>Fig A2. Pressure and Energy in function of the Monte
-                Carlo step in a continuation run (after the run in figure
-                A1).</figcaption>
-              </figure>
+                  Carlo step in a continuation run (after the run in figure
+                  A1).</figcaption>
+              </div>
 
-              <figure class="img-fluid">
+
+
+              <div class="container">
                 <img alt="Lenard Jones interactions"
                      class="img-fluid"
                      src="media/sub2/LJpotential.svg" />
@@ -172,9 +176,9 @@
                 Lenard Jones interaction showing the atractions and repulsions
                 in function of the distance of two neutral atoms in space
                 (Wikimedia Commons, 2007)</figcaption>
-              </figure>
+              </div>
 
-              <figure class="img-fluid">
+              <div class="container">
                 <img alt="Energy vs Step"
                      class="facet-img-fluid-left"
                      src="media/sub2/energies_a4.png" />
@@ -184,15 +188,15 @@
                 <figcaption>Fig A2. Pressure and Energy in function of the Monte
                 Carlo step in a run with Temperature = 4.0 and Density =
                 0.8.</figcaption>
-              </figure>
+              </div>
 
-              <figure class="img-fluid">
+              <div class="container">
                 <img alt="Plotting of multiple isotherms"
                      class="img-fluid"
                      src="media/sub2/multiplot.png" />
                 <figcaption><strong>Fig A3.</strong>Pressure in function of
-                temperatures and densities of the system.</figcaption>
-              </figure>
+                  temperatures and densities of the system.</figcaption>
+              </div>
 
               <h3>Exploration of the State equation</h3>
 
@@ -272,34 +276,35 @@
                 one can note that XXXX
               </p>
 
-              <figure class="img-fluid">
+              <div class="container">
                 <img alt="HH pair correlations"
-                     class="facet-img-fluid-left"
-                     src="media/sub2/PairCorrelationFunctionHH.png" />
+                    class="facet-img-fluid-left"
+                    src="media/sub2/PairCorrelationFunctionHH.png" />
                 <img alt="OH pair correlations"
-                     class="facet-img-fluid-right"
-                     src="media/sub2/PairCorrelationFunctionOH.png" />
+                    class="facet-img-fluid-right"
+                    src="media/sub2/PairCorrelationFunctionOH.png" />
                 <img alt="HH pair correlations"
-                     class="facet-img-fluid-left"
-                     src="media/sub2/PairCorrelationFunctionOO.png" />
+                    class="facet-img-fluid-left"
+                    src="media/sub2/PairCorrelationFunctionOO.png" />
                 <figcaption><strong>Fig B1</strong> Pair correlations showing
                 the occurence of atom pairs with respect to a random theoretical
                 distribution.</figcaption>
-              </figure>
-              <hr/>
+                <hr/>
+              </div>
 
 
-              <figure class="img-fluid">
+
+              <div class="container">
                 <img alt="water movement"
-                     class="img-fluid"
-                     src="media/sub2/water_diffusion.gif" />
+                    class="img-fluid"
+                    src="media/sub2/water_diffusion.gif" />
                 <figcaption><strong>Fig B2</strong> Figure depicting the
                 movement of water molecules at three different temperatures,
                 260k 300k and 380k from left to right accordingly, six molecules
                 where randomly chosen and coloured blue to facilitate visual
                 tracking </figcaption>
-              </figure>
-              <hr/>
+                <hr/>
+              </div>
 
               <div class="container-fluid">
                 <table class="table table-striped">
@@ -355,6 +360,18 @@
               <h3>Approach to model the molecule</h3>
 
               <p>
+                In order to solve the priorly mentioned problems several
+                complementary approaches where used; at first the planarity of
+                the molecule was modelled as a pair of entities with constricted
+                distance instead of using the empiric aproach of binding carbons
+                and oxygen to form the molecule; therefore the mass component of
+                the molecule is given by this two massive elements and the
+                charge (and inter-molecular interaction component) of the carbon
+                and oxygen atoms are given by virtual sites aling this couple of
+                massive atoms.
+              </p>
+
+              <p>
                 Several modifications where made from the molecular dinamics
                 parameters files published originally for argon molecules in
                 order to make the model viable (not crash at least); Importantly
@@ -365,14 +382,46 @@
                 than the case of Argon and as such a much finer equilibration
                 ois necessary, since large step sizes and coupling coefficents
                 (tau_p and tau_t) lead to the crash of the system (makes it
-                'explote').
+                'explote') when submitting the system to our particular
+                conditions of 20 bar and 250k (even during the equilibration
+                steps).
+              </p>
 
+              <div class="container">
+                <img alt="Minimization"
+                    class="facet-img-fluid-left"
+                    src="media/sub2/liquid_min.edr-energy.xvg.png" />
+                <img alt="Pressure equilibration"
+                    class="facet-img-fluid-right"
+                    src="media/sub2/liquid_press_equilibration.edr-energy.xvg.png" />
+                <figcaption class="figure-caption">
+                    <strong>Fig C2.</strong> System properties in function of
+                    the simulation time, energy minimization step on the left
+                    and pressure equilibraion on the right.
+                </figcaption>
+                <hr/>
+              </div>
+
+              <p>
                 It was proven to be of ulterior importance the need to
                 explicitly exclude interactions within our molecule, due to the
                 fact that the lack of bonds that was usefull to state the
                 planarity of the molecule does not exclude them from interacting
                 electrostatically with each other.
               </p>
+
+              <h3>Annealing Simulation</h3>
+
+              <p>
+                In order to attempt to visualize a change of state in our model
+                an annealing was simulated where a gradient of temperature was
+                applied to the system from 250k to 200k in 500 ps and the
+                properties of the system where measured, It is posible to note
+                the decrease in movement of the particles, as expressed by
+                pressure and energy of the system and furthermore (fig )
+              </p>
+
+              <h3>Remarks</h3>
 
               <p>
                 As a concluding remark it is to note that most likely this model
@@ -383,34 +432,47 @@
                 system.
               </p>
 
-
-              <figure class="img-fluid">
-
+              <div class="container">
                 <img alt="Co2 temp stabilization"
-                     class="facet-img-fluid-left"
-                     src="media/sub2/co2_temp_stabilization.gif" />
+                    class="facet-img-fluid-left"
+                    src="media/sub2/co2_temp_stabilization.gif" />
                 <img alt="co2 annealing"
-                     class="facet-img-fluid-right"
-                     src="media/sub2/co2_pressure_stabilization.gif" />
+                    class="facet-img-fluid-right"
+                    src="media/sub2/co2_pressure_stabilization.gif" />
                 <figcaption><strong>Fig C1</strong> Figure depicting the two
-                     main stages in the stabilization of the molecules of co2 in
-                     our model
+                    main stages in the stabilization of the molecules of CO2 in
+                    our model, temperature equilibration on the left and
+                    pressure equilibration on the right.
                 </figcaption>
-              </figure>
+                <hr/>
+              </div>
 
-              <figure class="img-fluid">
+
+
+              <div class="container">
                 <img alt="co2 annealing"
-                     class="img-fluid"
-                     src="media/sub2/rightis_end_annealing.gif" />
+                    class="img-fluid"
+                    src="media/sub2/rightis_end_annealing.gif" />
                 <img alt="co2 annealing"
-                     class="img-fluid"
-                     src="media/sub2/co2_rightis_end_annealing_2.gif" />
-                <figcaption><strong>Fig C2</strong> Figure depicting the
+                    class="img-fluid"
+                    src="media/sub2/co2_rightis_end_annealing_2.gif" />
+                <figcaption><strong>Fig C3</strong> Figure depicting the
                 movement of CO2 molecules at 250K (left) and 200k (right) four
                 molecules where randomly chosen and coloured to facilitate
                 visual tracking, bottom section is only the coloured molecules
                 </figcaption>
-              </figure>
+                <hr/>
+              </div>
+
+              <div class="container">
+                <img alt="Properties during Annealing"
+                    class="img-fluid"
+                    src="media/sub2/anneal_beta.edr-energy.xvg.png"/>
+                <figcaption><strong>Fig C4.</strong> Depiction of the system
+                    properties during the descent of temperature. </figcaption>
+                <hr/>
+              </div>
+
             </div>
           </div>
 
