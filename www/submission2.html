@@ -124,7 +124,7 @@
                 required to achieve equilibrium increases by the increase in
                 temperature, due to the fact that the possibility of accepting a
                 non favorable step increases with the Temperature
-                (<strong>Equation 2</strong>), therefore by random change more
+                (Equation 2), therefore by random change more
                 unfavorable steps that do not decrease the energy of the system
                 would be accepted and from the chemistry point of view, it is
                 more likely that our system assumes states that are not as
@@ -287,12 +287,6 @@
                 four different temperatures (260k, 280k, 300k and 380k).
               </p>
 
-              <p>
-                From the ensambles we where able to note several properties that
-                changed with the changes in temperature of the system, at first
-                one can note that XXXX
-              </p>
-
               <div class="container">
                 <img alt="water movement"
                     class="img-fluid"
@@ -304,6 +298,17 @@
                 tracking </figcaption>
                 <hr/>
               </div>
+
+              <p>
+                From the ensambles we where able to note several properties that
+                changed with the changes in temperature of the system, at first
+                one can note that there are structural chenges at several levels
+                in our model system, where one can observe the changes in state
+                in our model both as as a reduction in the diffussion
+                coefficient as temperatures decrease (table 1) and as a shift in
+                the pair coorelation curve that resembles more the one of an
+                ideal gas.
+              </p>
 
               <div class="container-fluid">
                 <table class="table table-striped">
@@ -345,7 +350,45 @@
               <p>
                 To calculate the diffusion of water, the same model as reviously
                 mentioned was used with conditions of 25 C and 1 atm in an NPT
-                ensamble, using the Parrinello Rahman barostat
+                ensamble, using the Parrinello Rahman barostat.
+              </p>
+
+              <p>
+                Making use of this ensamble a diffussion coefficient of  <strong>2.4661
+                (+/- 0.1884 1e-5 cm2/s)</strong> was measured, which closely
+                resembles previously reported values for this simple water
+                molecule model; in contrast with 2.49, as published by Mahoney
+                and Jorgensen (Mahoney and Jorgensen, 2001). In additional it is
+                psible to compare this value with the one derived from more
+                complex models of water molecules where virtual atoms are added
+                to increase the resemblance to experimental properties at the
+                expense of an increase computational complexity; as such the
+                TIP5P model pruduces a measured value of <strong>2.62</strong>
+                at the same conditions of pressure and temperature, which
+                depending on the aplication might or not be neglectable (further
+                emphasizing the need to choose the appropiate model depending on
+                the application).
+              </p>
+
+              <h4>Why not use Metropolis Monte Carlo ?</h4>
+              <p>
+                By definition the monte carlo methods do not sample our ensamble
+              in time and as such can not provide information regarding the
+              dinamic properties of the system, in other words, since it does
+              not have the conception of time in the simulation; cannot provide
+              information regarding processes that occur through time, such as
+              diffussion.
+              </p>
+
+              <h4>Why should maximum cut offs of the interactions be smaller
+                than half the box size ?</h4>
+
+              <p>
+                The answer lies in the fact that when considering a periodic
+                boundary condition in our simulation, a cutoff higher than that
+                would mean that an atom could exert forces with itself in the
+                neighboring box, which in no way would resemble a system in the
+                real world.
               </p>
 
               <hr/>
@@ -361,7 +404,8 @@
                 conformations of the molecule for it to ressemble the native
                 conformation as a plannar molecule, and in addition the fact
                 that CO2 only acquires its liquid state at high pressure makes
-                the equilibration steps challenging to accomplish.
+                the equilibration steps challenging to accomplish (Under more
+                than 5 atm of pressure and temperatures close to -60 C).
               </p>
 
               <h3>Approach to model the molecule</h3>
@@ -391,7 +435,17 @@
                 (tau_p and tau_t) lead to the crash of the system (makes it
                 'explote') when submitting the system to our particular
                 conditions of 20 bar and 250k (even during the equilibration
-                steps).
+                steps) which makes it particularly hard to test most of the
+                proposed situations.
+              </p>
+
+              <p>
+                One can get to observe that with the many modifications made one
+                is able to have a stable system with the sequential use of
+                energy minimization, NVT and NPT simulations (stages depicted in
+                figures C1 and C2); nonetheless this stability is accompained by
+                large oscilations in the measured properties despite the
+                averaging over time in constant values.
               </p>
 
               <div class="container">
@@ -402,7 +456,7 @@
                     class="facet-img-fluid-right"
                     src="media/sub2/liquid_press_equilibration.edr-energy.xvg.png" />
                 <figcaption class="figure-caption">
-                    <strong>Fig C2.</strong> System properties in function of
+                    <strong>Fig C1.</strong> System properties in function of
                     the simulation time, energy minimization step on the left
                     and pressure equilibraion on the right.
                 </figcaption>
@@ -411,10 +465,10 @@
 
               <p>
                 It was proven to be of ulterior importance the need to
-                explicitly exclude interactions within our molecule, due to the
-                fact that the lack of bonds that was usefull to state the
-                planarity of the molecule does not exclude them from interacting
-                electrostatically with each other.
+                <strong>explicitly exclude interactions within our
+                molecule</strong>, due to the fact that the lack of bonds that
+                was usefull to state the planarity of the molecule does not
+                exclude them from interacting electrostatically with each other.
               </p>
 
               <h3>Annealing Simulation</h3>
@@ -425,7 +479,9 @@
                 applied to the system from 250k to 200k in 500 ps and the
                 properties of the system where measured, It is posible to note
                 the decrease in movement of the particles, as expressed by
-                pressure and energy of the system and furthermore (fig )
+                pressure and energy of the system and furthermore (fig C4),
+                visualization of the actual movement of the molecules is also
+                provided in figure C3.
               </p>
 
               <h3>Remarks</h3>
@@ -446,15 +502,13 @@
                 <img alt="co2 annealing"
                     class="facet-img-fluid-right"
                     src="media/sub2/co2_pressure_stabilization.gif" />
-                <figcaption><strong>Fig C1</strong> Figure depicting the two
+                <figcaption><strong>Fig C2</strong> Figure depicting the two
                     main stages in the stabilization of the molecules of CO2 in
                     our model, temperature equilibration on the left and
                     pressure equilibration on the right.
                 </figcaption>
                 <hr/>
               </div>
-
-
 
               <div class="container">
                 <img alt="co2 annealing"
@@ -488,11 +542,10 @@
 
             <div id="references" class="container-fluid">
               <p><strong>Wikimedia Commons, 2007</strong>.
-              12-6-Lennard-Jones-Potential, retrieved February 17, 2016.</p> 
-              <p></p>
-              <p></p>
-              <p></p>
-              <p></p>
+              12-6-Lennard-Jones-Potential, retrieved February 17, 2016.</p>
+              <p><strong>Mahoney and Jorgensen, 2001</strong>. Diffusion
+              constant of the TIP5P model of liquid water, Journal of chemical
+              physics 114-1.</p>
             </div>
           </div>
           <hr/>
