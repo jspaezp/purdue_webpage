@@ -97,7 +97,7 @@ footer {
 }
 
 
-@media(min-width : @screen-sm-min){
+@media only screen and (min-width: 992px) {
   .row-eq-height{
     display: -webkit-box;
     display: -webkit-flex;
