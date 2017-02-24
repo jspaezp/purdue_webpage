@@ -6,63 +6,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="js/jquery.matchHeight.js" type="text/javascript"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.matchHeight/0.7.0/jquery.matchHeight-min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" />
-  <link rel="stylesheet" type="text/css" href="./css/main_style.css">
-  <title>J Sebastian Paez - CHM579 - Submission 2</title>
+  <link rel="stylesheet" type="text/css" href="css/main_style.css">
+  <title>J Sebastian Paez - CHM579 - Submission 3</title>
   <script>
     $(function(){
       $( "#footer" ).load( "footer.html" );
       $( "#header" ).load( "header.html" );
       $( "#navbar" ).load( "navbar.html" );
-      $( "#main_content" ).load( "sub3/acetone.html #content" );
-      $( "#sidenav" ).load( "sub3/acetone.html #sidenav_content" );
-      $( "#main_content" ).load( "sub3/references.html #content");
-      $( "#sidenav" ).append($("<div></div>").load( "sub3/references.html #sidenav_content"));
-      $.get('sub3/references.html', function(data) {
-        var content = $(data).filter('#content');
-        var sidenav_content = $(data).filter('#sidenav_content');
-        $('#sidenav').append(sidenav_content);
-        $('#main_content').append(content);
-      });
+      function load_my_content(file) {
+        $( "#sidenav" ).append($('<div>').load( file+" #sidenav_content" ));
+        $( "#main_content" ).append($('<div>').load( file+" #content" ));
+      }
+      load_my_content("sub3/acetone.html")
+      load_my_content("sub3/lysozime.html")
+      load_my_content("sub3/references.html")
     })
   </script>
 </head>
 
 <body>
-  <!-- NAVBAR START -->
 
-  <div id="navbar">
-  </div>
-
-  <!-- NAVBAR END   -->
+  <div id="navbar"> </div>
 
   <div class="container-fluid text-center">
     <div class="row row-eq-height content">
-    <!-- row container open -->
-      <!-- SIDEBAR START -->
-      <div class="col-md-2 sidenav">
-        <div id="sidenav" class="box">
-        </div>
-      </div>
-      <!-- SIDEBAR END -->
 
-      <!-- CONTENT START -->
-      <div class="col-md-10 text-left content-area">
-        <div id="main_content" class="box">
-          <hr/>
-        </div>
+      <div class="col-md-2 sidenav">
+        <div id="sidenav" class="box"> </div>
       </div>
-      <!-- CONTENT END -->
+
+      <div class="col-md-10 text-left content-area">
+        <div id="main_content" class="box"> </div>
+      </div>
+
     </div>
   </div>
-<!-- row container close -->
-<!-- FOOTER START -->
+
 <div id="footer"></div>
-<!-- FOOTER END -->
 
 </body>
 </html>
