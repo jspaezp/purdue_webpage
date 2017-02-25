@@ -1,0 +1,71 @@
+<html>
+  <div id="sidenav_content">
+      <p><a href="#montecarlo_simulation">Simple Monte-Carlo Simulation</a></p>
+      <hr/>
+  </div>
+
+  <div id="content">
+    <div id="montecarlo_simulation" class="container">
+      <h1>MonteCarlo Simulation</h1>
+      <div class="container">
+        <h2>Energy vs Monte Carlo step</h2>
+        <figure>
+          <img alt="Energy Distribution in initial Iterations"
+                src="media/sub1/initial_step_energy.png"
+                width=650 />
+          <figcaption>
+            <strong>Figure C1.</strong> Distribution of the measured free
+            energy during the first 120 steps of the simple Monte Carlo,
+            where it is evident the tendency of larger step sizes to
+            stabilize faster (magenta), while smaller step sizes (orange)
+            have the tendency to stay in higher energy states for a higher
+            ammount of iterations, this due to periods of stability in
+            local minima for the systems free energy.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <h2>Energy vs Monte Carlo step</h2>
+        <figure>
+          <img alt="Energy distribution during final Iterations"
+                src="media/sub1/final_step.png"
+                width=800 />
+          <figcaption>
+            <strong>Figure C2.</strong> Distribution of the energy states
+            in the last 2000 steps of a 2-million iteration simple Monte
+            Carlo simulation for 10 replicates, 4 different step sizes
+            (panes) and 4 different temperature settings (colours),
+            showing how smaller step sizes do not drastically change the
+            mean final energy (between-run mean energy) of the sistem but
+            they do change distribution of the the energies (within-run
+            variation), where smaller step sizes stabilize in narrower
+            windows of local minima.
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container">
+        <figure>
+          <img alt="Final Energy vs Temp"
+                src="media/sub1/f_energy_vs_Temp.png"
+                width=400/>
+          <figcaption>
+            <strong>Figure C3.</strong> Final Energy in function of the
+            temperature and the step size (50 replicates and 2 milliion
+            monte carlo steps), Where it is posible to show that there is
+            no evident relationship in the step size used but there is an
+            evident relationship with the temperature, suggesting that
+            with enough time every step size could get to the minimum
+            energy, and that this energy is dependent on the temperature;
+            this is expected when one considers temperature as a measure
+            of the internal energy of a substance, where a higher
+            temperature setting would involve a higher free energy in the
+            system.
+            <br/>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </div>
+</html>

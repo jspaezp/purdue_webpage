@@ -1,0 +1,219 @@
+<html>
+  <div id="sidenav_content">
+    <p><a href="#koba">Structure Refinement</a></p>
+    <hr/>
+  </div>
+
+  <div id="content">
+    <div id="koba"
+          class="container">
+      <h1>Structure Refinement</h1>
+      <p>
+        The structure of the monomeric form of the potassium channel was
+        submitted to KoBa-Min server for refinement via energy
+        optimization (Rodrigues, Levitt and Chopra, 2012) where a dramatic
+        increase in free energy was achievable, mainly by the addition of
+        missing residues in the initial structure and refinement of bond
+        lengths and andgles in the side chains of the aminoacid residues.
+        As a remark it is to note that most of the missing residues where
+        of hydrophillic nature, which are hard to cristalize properly in
+        the contect of a membrane protein, since the majority of its
+        composition is hydrophobic in nature.
+      </p>
+
+      <div id="structures"
+            class="container">
+
+        <h2>Final (refined) Structure</h2>
+        <figure>
+          <img alt="overlap" src="media/sub1/overlap_3.png"/>
+          <figcaption> <strong>Fig. B1 Overlap</strong> of the unrefined (Cyan) and refined
+            (Magenta) structures Fig. Comparisson of original structure (Cyan) and the refined version (Magenta)
+          </figcaption>
+        </figure>
+        <hr>
+
+        <h2>Aminoacid Sequence of the submited structure</h2>
+        <div class="scroll">
+          <p>
+            ALA LEU HIS TRP ARG ALA ALA GLY ALA ALA THR VAL LEU LEU VAL ILE VAL LEU LEU ALA
+            GLY SER TYR LEU ALA VAL LEU ALA GLU ARG GLY ALA PRO GLY ALA GLN LEU ILE THR TYR
+            PRO ARG ALA LEU TRP TRP SER VAL GLU THR ALA THR THR VAL GLY TYR GLY ASP LEU TYR
+            PRO VAL THR LEU TRP GLY ARG CYH VAL ALA VAL VAL VAL MET VAL ALA GLY ILE THR SER
+            PHE GLY LEU VAL THR ALA ALA LEU ALA THR TRP PHE VAL GLY ARG GLU GLN
+          </p>
+        </div>
+
+        <div>
+          <table class="table table-striped">
+            <tbody>
+              <thead>
+                <tr>
+                  <th>Initial Energy</th>
+                  <th>Final Energy After Refinement</th>
+                  <th>Run time</th>
+                </tr>
+              </thead>
+            <tr>
+              <td>3959.4600</td>
+              <td>-3073.5104</td>
+              <td>14 s</td>
+            </tr>
+            </tbody>
+          </table>
+
+          <p>
+            Here it is shown that the free energy was dramatically
+            decreased by the refinement process, hereby producing a much
+            more thermodinamically stable structure.
+          </p>
+          <br/>
+
+          <p>
+            Nonetheless it is to note that most of
+            this changes are not shown as large movements in the protein
+            backbone <strong>Fig B1</strong>, but are due to changes in
+            the aminoacid sidechains, in particular for aminoacids that
+            where not camputed initially in the crystal structure (initial
+            .pdb file)
+          </p>
+        </div>
+      <hr>
+
+      </div>
+      <hr>
+
+      <div id="strained_lengths"
+            class="container">
+
+        <h2>MOST STRAINED BOND LENGTHS</h2>
+        <table class="table table-striped">
+          <tbody>
+            <thead>
+              <tr>
+                <th>ENERGY</th> <th>BOND</th> <th>FROM</th> <th>TO</th> <th>CODE</th> <th>CB</th> <th>BZRO</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>.410</td><td>1.485</td><td>LEU 18  CA</td><td>LEU 18  C</td><td>C1A' 10</td><td>250.0</td><td>1.526</td>
+              </tr>
+              <tr>
+                <td>.283</td><td>1.491</td><td>ALA 43  CA</td><td>ALA 43  CB</td><td>C1C3  8</td><td>250.0</td><td>1.525</td>
+              </tr>
+              <tr>
+                <td>.261</td><td>1.494</td><td>SER 80  CA</td><td>SER 80  C</td><td>C1A' 10</td><td>250.0</td><td>1.526</td>
+              </tr>
+              <tr>
+                <td>.255</td><td>1.557</td><td>THR 63  CA</td><td>THR 63  CB</td><td>C1C1  8</td><td>250.0</td><td>1.525</td>
+              </tr>
+              <tr>
+                <td>.253</td><td>1.344</td><td>ARG 67  C</td><td>CYH 68  N</td><td>A'N1 15</td><td>500.0</td><td>1.322</td>
+              </tr>
+          </tbody>
+        </table>
+        <p>
+          TOTAL BOND ENERGY EXCLUDING WATER MOLECULES IS 18.67 (Initial = 1526.52)
+        </p>
+      </div>
+      <hr>
+
+      <div id="strained_angles"
+            class="container">
+        <h2>STRAINED BOND ANGLES</h2>
+
+        <table class="table table-striped">
+          <tbody>
+            <thead>
+              <tr>
+                <th>ENERGY</th> <th>ANGLE</th> <th>ATOM I</th> <th>ATOM J</th> <th>ATOM K</th> <th>CODE</th> <th>CT    TZRO</th>
+              </tr>
+            </thead>
+
+            <tr>
+              <td>2.315</td><td>120.4</td><td>THR 90  N</td><td>THR 90  CA</td><td>THR 90  CB</td><td>N1C1C1 21</td><td>60.0 109.100</td>
+            </tr>
+            <tr>
+              <td>2.182</td><td>122.3</td><td>GLU 49  CA</td><td>GLU 49  CB</td><td>GLU 49  CG</td><td>C1C2C2 24</td><td>60.0 111.400</td>
+            </tr>
+            <tr>
+              <td>1.798</td><td>120.0</td><td>VAL 73  C</td><td>VAL 73  CA</td><td>VAL 73  CB</td><td>A'C1C1 25</td><td>60.0 110.100</td>
+            </tr>
+            <tr>
+              <td>1.490</td><td>119.1</td><td>LEU 27  C</td><td>LEU 27  CA</td><td>LEU 27  CB</td><td>A'C1C2 25</td><td>60.0 110.100</td>
+            </tr>
+            <tr>
+              <td>1.483</td><td>101.1</td><td>GLU 49  C</td><td>GLU 49  CA</td><td>GLU 49  CB</td><td>A'C1C2 25</td><td>60.0 110.100</td>
+            </tr>
+          </tbody>
+        </table>
+        <p>
+          TOTAL ANGLE ENERGY EXCLUDING WATERS IS 98.66 (Initial = 2225.14)
+        </p>
+
+      </div>
+      <hr>
+
+      <div id="strained_torsion"
+            class="container">
+        <h2>STRAINED TORSION ANGLES</h2>
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>ENERGY</th> <th>TORSION</th> <th>ATOM I</th> <th>ATOM J</th> <th>ATOM K</th> <th>ATOM L</th> <th>CODE</th> <th>CP</th> <th>CPN</th> <th>PZRO</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>2.795</td><td>-118.4</td><td>GLU 29  CA</td><td>GLU 29  CB</td><td>GLU 29  CG</td><td>GLU 29  CD</td><td>C1C2C2A 4</td><td>1.40</td><td>3.</td><td>60.0</td>
+            </tr>
+            <tr>
+              <td>2.672</td><td>-8.2</td><td>THR 90  N</td><td>THR 90  CA</td><td>THR 90  CB</td><td>THR 90  CG2</td><td>N1C1C1C3  4</td><td>1.40</td><td>3.</td><td>60.0</td>
+            </tr>
+            <tr>
+              <td>2.637</td><td>-159.1</td><td>GLU 29  CA</td><td>GLU 29  C</td><td>ARG 30  N</td><td>ARG 30  CA</td><td>C1A'N1C1 25</td><td>40.00</td><td>1.</td><td>180.0</td>
+            </tr>
+            <tr>
+              <td>2.398</td><td>-134.8</td><td>TRP  4  N</td><td>TRP  4  CA</td><td>TRP  4  CB</td><td>TRP  4  CG</td><td>N1C1C2A5  4</td><td>1.40</td><td>3.</td><td>60.0</td>
+            </tr>
+            <tr>
+              <td>2.284</td><td>-103.1</td><td>LEU 88  N</td><td>LEU 88  CA</td><td>LEU 88  CB</td><td>LEU 88  CG</td><td>N1C1C2C1  4</td><td>1.40</td><td>3.</td><td>60.0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr>
+
+      <div id="phi-psi"
+            class="container">
+        <h2>STRAINED PHI-PSI ANGLES</h2>
+        <table class="table table-striped">
+          <tbody>
+            <thead>
+              <tr>
+                <th>ENERGY</th> <th>PHI</th> <th>PSI</th> <th>ATOM I</th> <th>ATOM J</th> <th>ATOM K</th> <th>ATOM L</th>
+              </tr>
+            </thead>
+            <tr>
+              <td>.000</td><td>-137.0</td><td>-47.6</td><td>ALA  1  C</td><td>LEU  2  N</td><td>LEU  2  CA</td><td>LEU  2  C</td>
+            </tr>
+            <tr>
+              <td>.000</td><td>-73.0</td><td>-23.1</td><td>LEU  2  C</td><td>HIS  3  N</td><td>HIS  3  CA</td><td>HIS  3  C</td>
+            </tr>
+            <tr>
+              <td>.000</td><td>-94.2</td><td>-15.8</td><td>HIS  3  C</td><td>TRP  4  N</td><td>TRP  4  CA</td><td>TRP  4  C</td>
+            </tr>
+            <tr>
+              <td>.000</td><td>-99.4</td><td>-18.8</td><td>TRP  4  C</td><td>ARG  5  N</td><td>ARG  5  CA</td><td>ARG  5  C</td>
+            </tr>
+            <tr>
+              <td>.000</td><td>-72.5</td><td>-32.9</td><td>ARG  5  C</td><td>ALA  6  N</td><td>ALA  6  CA</td><td>ALA  6  C</td>
+              </tr>
+          <tbody>
+        </table>
+      </div>
+      <hr>
+    </div>
+  </div>
+</html>
