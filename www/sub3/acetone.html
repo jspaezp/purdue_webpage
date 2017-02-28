@@ -1,15 +1,146 @@
 <html>
   <div id="sidenav_content">
     <p><a href="#acetone">Acetone</a></p>
+    <hr/>
   </div>
 
   <div id="content">
     <div id="acetone" class ="container-fluid">
-      <h1>Molecular Dynamics with Gromacs</h1>
+      <h1>Modelling a molecule of acetone in water</h1>
       <div id="simulation_water"
-           class="container-fluid"></div>
-      <div id="simulation_carbon"
-           class="container-fluid"></div>
+          class="container-fluid">
+        <h2>Approach to the modelling of Acetone <small>Or how to make acetone
+        as simple as needed but not a single bit more</small></h2>
+      </div>
+      <div id=""
+           class="container-fluid">
+
+        <img alt="measured distances of hydratio shell"
+             class="facet-img-fluid-left"
+             src="media/sub3/Peek_distances.gif"/>
+        <img alt="measured distances of hydration shell"
+             class="facet-img-fluid-right"
+             src="media/sub3/Peek_angles.gif"/>
+        <p>
+          <strong>Fig A1.</strong> Measurement of selected atoms of the
+          hydration shell to the acetone molecule.
+        </p>
+      </div>
+
+      <div class="container-fluid">
+        <h2>Equilibration steps <small>or how to prevent your system from
+          blowing up</small></h2>
+        <div class="container-fluid">
+          <img alt=""
+              src="media/sub3/acetone_distances/acetone_equilibration_NVT_energy.xvg.png"
+              class="facet-img-fluid-left" />
+          <img alt=""
+              src="media/sub3/acetone_angles/acetone_equilibration_NVT_energy.xvg.png"
+              class="facet-img-fluid-left" />
+        </div>
+        <div class="container-fluid">
+          <img alt=""
+              src="media/sub3/acetone_distances/acetone_equilibration_NPT_energy.xvg.png"
+              class="facet-img-fluid-left" />
+          <img alt=""
+              src="media/sub3/acetone_angles/acetone_equilibration_NPT_energy.xvg.png"
+              class="facet-img-fluid-left" />
+        </div>
+        <div class="container-fluid">
+          <img alt=""
+              src="media/sub3/acetone_distances/acetone_production_run_energy.xvg.png"
+              class="facet-img-fluid-left" />
+          <img alt=""
+              src="media/sub3/acetone_angles/acetone_production_run_energy.xvg.png"
+              class="facet-img-fluid-left" />
+        </div>
+
+      </div>
+
+
+
+      <!-- <div class="container-fluid">
+           <img alt=""
+           src="media/sub3/acetone_distances/acetone_pre_production_run_energy.xvg.png"
+           class="facet-img-fluid-left" />
+           <img alt=""
+           src="media/sub3/acetone_angles/acetone_pre_production_run_energy.xvg.png"
+           class="facet-img-fluid-left" />
+           </div> -->
+
+      <div class="container-fluid">
+        <h2>Radial distributions <small> or determining the structure of the
+          hydration shell </small> </h2>
+        <div>
+          <h3>Addociations with the CH3 'atom'</h3>
+          <div class="container-fluid">
+            <img alt=""
+                src="media/sub3/acetone_distances/RDF_CH_HWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+            <img alt=""
+                src="media/sub3/acetone_angles/RDF_CH_HWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+          </div>
+          <div class="container-fluid">
+            <img alt=""
+                src="media/sub3/acetone_distances/RDF_CH_OWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+            <img alt=""
+                src="media/sub3/acetone_angles/RDF_CH_OWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+          </div>
+        </div>
+
+        <div>
+          <h3>Associations with the alpha carbon</h3>
+          <div class="container-fluid">
+            <img alt=""
+                src="media/sub3/acetone_distances/RDF_C_HWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+            <img alt=""
+                src="media/sub3/acetone_angles/RDF_C_HWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+          </div>
+          <div class="container-fluid">
+            <img alt=""
+                src="media/sub3/acetone_distances/RDF_C_OWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+            <img alt=""
+                src="media/sub3/acetone_angles/RDF_C_OWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+          </div>
+        </div>
+
+        <div>
+          <h3>Associations with O</h3>
+          <div class="container-fluid">
+            <img alt=""
+                src="media/sub3/acetone_distances/RDF_O_OWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+            <img alt=""
+                src="media/sub3/acetone_angles/RDF_O_OWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+          </div>
+          <div class="container-fluid">
+            <img alt=""
+                src="media/sub3/acetone_distances/RDF_O_HWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+            <img alt=""
+                src="media/sub3/acetone_angles/RDF_O_HWacetone_production_run.xvg.png"
+                class="facet-img-fluid-left" />
+          </div>
+        </div>
+
+      </div>
+      <!-- <div class="container-fluid">
+           <img alt=""
+           src="media/sub3/acetone_distances/RDF_CH_CHacetone_production_run.xvg.png"
+           class="facet-img-fluid-left" />
+           <img alt=""
+           src="media/sub3/acetone_angles/RDF_CH_CHacetone_production_run.xvg.png"
+           class="facet-img-fluid-left" />
+           </div> -->
+      <hr/>
     </div>
   </div>
 </html>
