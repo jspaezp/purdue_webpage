@@ -9,13 +9,17 @@
       <h1>Modeling of Deca-Alanine</h1>
       <h2>Re-Folding of Deca Alanine</h2>
 
-      <p>
-        To depict the folding process of deca-alanine to its stable helical
-        conformation, a simulation was run where a force was exerted to the
-        molecule to induce its unfolding and afterwards, this force was removed
-        to allow the peptide to return to its stable configuration (shown in
-        <strong>figure 1</strong>)
-      </p>
+      <div class="container-fluid">
+        <p>
+          To depict the folding process of deca-alanine to its stable helical
+          conformation, a simulation was run where a force was exerted to the
+          molecule to induce its unfolding and afterwards, this force was removed
+          to allow the peptide to return to its stable configuration (shown in
+          <strong>figure 1</strong>)
+        </p>
+      </div>
+
+
       <div id="simulation_da"
            class="container-fluid">
         <div class="container-fluid">
@@ -28,20 +32,56 @@
         </div>
 
         <h2>Unfolding of Deca-Alanine</h2>
+
         <div class="container-fluid">
+          <p>
+            In addition, the unfolding of deca-alanine was simulated by exerting a
+            pull to the extremes of the molecule of DA. This generated an
+            unfolding of it, which can be visualized in several ways, as a first
+            approach one can express this unfolding as a change with respect to
+            the initial folded configuration of DA, measured by the distance
+            between the extremes of the alanine chain, <strong>Figure 2</strong>).
+            Nonetheless this depiction is fairly crude and much more information
+            can be obtained through other depictions of the process, as it is the
+            force required for each step in the deformation to occur
+            (<strong>Figure 3</strong>), where a change in the 'force regime'
+            occurs when all hydrogen bonds are broken and further force only
+            strains angles and torsions.
+          </p>
+          <p>
+            In addition it is posible to observe the manner in which the
+            deca-alanine is unfolding under a more 'structural biology'
+            perspective, where the initial structure is textbook example of an
+            alpha helix due to the torsion angles, stabilized by in-chain
+            hydrogen bonds, therefore the unfolding of the structure implies a
+            rupture of this bonds and a modifications of this angles. The
+            modification of the angles and therefore change in secondary
+            structure can be visualized in <strong>Figures 4 and 5</strong> by
+            the distribution of torsions in the ramachandran plot as the pulling
+            proceeds; this can also be seen in <strong>Fiure 6</strong> where
+            the distribution of secondary structures is seen.
+          </p>
+        </div>
+
+        <div class="container-fluid">
+          <p> End to End Distance vs Time </p>
           <img alt="Deca-alanine refolding"
                class="img-fluid"
                src="media/sub3/decaalanine/plot_smds.png"/>
           <p>
-            <strong>Fig 2. </strong> Depiction of the refolding process of decaalanine.
+            <strong>Fig 2. </strong> distance between the termini of the
+            peptide. light lines represent the raw data, while dark lines
+            represent the corresponding product after applying a rolling mean.
           </p>
         </div>
         <div class="container-fluid">
+          <p> Force applied vs Time </p>
           <img alt="Deca-alanine refolding"
                class="img-fluid"
                src="media/sub3/decaalanine/plot_smds_force.png"/>
           <p>
-            <strong>Fig 3. </strong> Depiction of the refolding process of decaalanine.
+            <strong>Fig 3. </strong> Force applied to the peptide ends to
+            generate the desired displacement (pull) by time in the simulation.
           </p>
         </div>
         <div class="container-fluid">
@@ -49,7 +89,8 @@
                class="img-fluid"
                src="media/sub3/decaalanine/smd300.gif"/>
           <p>
-            <strong>Fig 4. </strong> Depiction of the refolding process of decaalanine.
+            <strong>Fig 4. </strong> Depiction of the unfolding process of
+            decaalanine at 300k. with the corresponding ramachandran plot.
           </p>
         </div>
         <div class="container-fluid">
@@ -57,22 +98,36 @@
                class="img-fluid"
                src="media/sub3/decaalanine/smd700.gif"/>
           <p>
-            <strong>Fig 6. </strong> Depiction of the refolding process of decaalanine.
+            <strong>Fig 5. </strong> Depiction of the unfolding process of
+            decaalanine at 700k. with the corresponding ramachandran plot.
           </p>
         </div>
 
         <h3>Helicity of the peptide</h3>
         <div class="container-fluid">
+          <p><strong> Secondary structure vs Time </strong></p>
+          <p>100k</p>
           <img class="img-fluid" src="media/sub3/decaalanine/da100.png"/>
+          <p>200k</p>
           <img class="img-fluid" src="media/sub3/decaalanine/da200.png"/>
+          <p>300k</p>
           <img class="img-fluid" src="media/sub3/decaalanine/da300.png"/>
+          <p>400k</p>
           <img class="img-fluid" src="media/sub3/decaalanine/da400.png"/>
+          <p>600k</p>
           <img class="img-fluid" src="media/sub3/decaalanine/da600.png"/>
+          <p>900k</p>
           <img class="img-fluid" src="media/sub3/decaalanine/da900.png"/>
           <p>
-            <strong>Fig 7. </strong> Depiction of the refolding process of decaalanine.
+            <strong>Fig 6. </strong> Qualitative plot representing the secondary
+            structure of the peptide with time (whole hotizontal span represents
+            simulation time), vertical position represents the residue position,
+            top being the start (Ala 1) and bottom being the end (Ala 10); note
+            the fact that increased temeprature implies a decrease stability of
+            the secondary structure.
           </p>
         </div>
+
       </div>
       <hr/>
     </div>
