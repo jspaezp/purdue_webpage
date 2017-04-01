@@ -7,6 +7,31 @@
   <div id="content">
     <div id="lysozyme" class ="container-fluid">
       <h1>Lysozyme Modeling </h1>
+
+      <div class="container-fluid">
+        <p>
+          The simulation of the protein Lysozime was carried out by using the
+          crystal structure with accession code 1AKE deposited in the protein
+          data bank as a template for the initial configuration (originally
+          resolved by Artymiuk, et.al 1982). It is to note that the biochemistry
+          and structure of this protein is widely known due to its small size,
+          solubility in aqueous environment, simplicity to purify and abundace,
+          which has made it a workhorse as a test subject in the
+          developement of multiple techniques that now are commonly used to
+          extract information from biomolecules (as x ray crystalography or
+          biomolecular NMR), all of this also makes it appealing as a test subject
+          for molecular dynamics simulations, since it is posible to compare
+          results from the simulations with experimental evidence.
+        </p>
+        <p>
+          In order to simulate the protein in water, the structure was converted
+          to gromacs format, solvated with 'SPC' water molecules, and subject to
+          sequential steps of energy minimization (figure 1), NVT simulation to
+          generate velocities (Figure 2) and finally an NPT simulation (Figure
+          3).
+        </p>
+      </div>
+
       <div>
         <h2>Equilibration Steps</h2>
         <div class="container-fluid">
@@ -69,12 +94,22 @@
                class="facet-img-fluid-right"
                src="media/sub3/rmsd_manual_xtal.png"/>
           <p>
-            <strong>Fig 5. </strong>  <strong>Fig 6. </strong>
+            <strong>Fig 5. </strong> depicts the gyration in each axis of the
+            protein and <strong>Fig 6. </strong> depicts the RMSD through the
+            simulation.
           </p>
         </div>
 
         <div>
           <h3>Discussing the movement of lysozyme</h3>
+
+          <p>
+            To evaluate the stability of our simulated protein in the system, the
+            Root Mean Square Deviation (RMSD) with respect to the Crystal
+            structure was measured at each time-point, where a lack of increase of
+            this value is interpreted as a stable configuration (in addition to a
+            really small value of merely 0.12, as depicted in Figure 6).
+          </p>
         </div>
       </div>
       <hr/>
