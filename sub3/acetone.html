@@ -25,28 +25,39 @@
           angles are the ones determining the configuration of the molecule.
         </p>
 
-        <p>
-          Details on the topology file can be found at this link
-          <a href="https://gist.github.com/jspaezp/517381b44b284dcfc319e1728a4b4ea6">
-            https://gist.github.com/jspaezp/517381b44b284dcfc319e1728a4b4ea6</a>
-        </p>
+        <h3>Distance-Constrain Topology</h3>
 
         <p>
-          <script
-              src="https://gist.github.com/jspaezp/517381b44b284dcfc319e1728a4b4ea6.js?file=acetone_constrains.top">
-          </script>
+          Note in the file how bonds are not stated in any particular functional
+          form but in a constrains manner, where their distance cannot change,
+          therefore the inproper distances do not differ in any manner to the
+          actual bonds in chemical terms.
         </p>
+
+        <div id='topology_gist_constrains'>
+          <!-- added after load by a script in the main html file -->
+        </div>
+
+        <h3>Inproper Dihedrals Topology</h3>
+
+        <p>
+          
+        </p>
+
+        <div id='topology_gist_angles'>
+          <!-- added after load by a script in the main html file -->
+        </div>
+
+
       </div>
 
       <div class="container-fluid">
         <h2>Equilibration steps <small>or how to prevent your system from
           blowing up</small></h2>
         <div class="container-fluid">
-          <img alt=""
-              src="media/sub3/acetone_distances/acetone_equilibration_NVT_energy.xvg.png"
-              class="facet-img-fluid-left" />
-          <img alt=""
-              src="media/sub3/acetone_angles/acetone_equilibration_NVT_energy.xvg.png"
+          <img src="media/sub3/acetone_distances/acetone_equilibration_NVT_energy.xvg.png"
+               class="facet-img-fluid-left" />
+          <img src="media/sub3/acetone_angles/acetone_equilibration_NVT_energy.xvg.png"
               class="facet-img-fluid-left" />
         </div>
         <div class="container-fluid">

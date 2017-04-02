@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" />
   <link rel="stylesheet" type="text/css" href="css/main_style.css">
@@ -47,6 +48,25 @@
 
     </div>
   </div>
+
+<script>
+ $(function() {
+   // Simulate adding a new gist embed after our page has been loaded
+   setTimeout(function() {
+     // Just need to add the element with a valid data-gist-id to the document, then call gist() on it
+     var $code = $('<code data-gist-id="517381b44b284dcfc319e1728a4b4ea6" data-gist-file="acetone_constrains.top"/>');
+     $code.appendTo('#topology_gist_constrains').gist();
+   }, 3000);
+ });
+ $(function() {
+   // Simulate adding a new gist embed after our page has been loaded
+   setTimeout(function() {
+     // Just need to add the element with a valid data-gist-id to the document, then call gist() on it
+     var $code = $('<code data-gist-id="517381b44b284dcfc319e1728a4b4ea6" data-gist-file="acetone_dihedrals.top"/>');
+     $code.appendTo('#topology_gist_angles').gist();
+   }, 3000);
+ });
+</script>
 
 <div id="footer"></div>
 
