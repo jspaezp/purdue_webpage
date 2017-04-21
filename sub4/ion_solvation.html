@@ -1,71 +1,95 @@
 <html>
   <div id="sidenav_content">
-    <p><a href="#acetone">Acetone</a></p>
+    <p><a href="#single_ions">Single Ions in Water</a></p>
     <hr/>
   </div>
 
   <div id="content">
-    <div id="acetone" class ="container-fluid">
-      <h1>Modelling a molecule of acetone in water</h1>
+      <!-- <div id="acetone" class ="container-fluid"> -->
+    <div id="ions" class ="container-fluid">
+      <h1>Modelling Ions In Water</h1>
       <div id="simulation_water"
           class="container-fluid">
-        <h2>Approach to the modelling of Acetone <small>Or how to make acetone
-          as simple as needed but not a single bit more</small></h2>
+        <h2>Single Ions</h2>
         <p>
-          In order to simulate a single molecule of acetone in a box of water,
-          several aproximation where mate to make its behaviour resemble the one
-          of an actual acetone molecule, in order to reduce the computational
-          expense involves in calculating the energy in each step of the
-          simulation for our molecule, the hydrogens where integrated to their
-          bound carbon as methyl groups. In addition, in order to consider the
-          nature of the carbon that forms a double bond with oxigen, where due
-          to its configuration forms a plannar structure two topologies where
-          proposed, one where this plannarity is coherced by constraining the
-          distances between non-bonded atoms and another where the dihedral
-          angles are the ones determining the configuration of the molecule.
+          In order to simulate the interactions of singular ions with the media,
+          an ensamble of water TIP3 water molecules was generated with the
+          addition of a single ion, either Sodium or Chloride.
         </p>
 
-        <h3>Distance-Constrain Topology</h3>
-
-        <p>
-          Note in the file how bonds are not stated in any particular functional
-          form but in a constrains manner, where their distance cannot change,
-          therefore the inproper distances do not differ in any manner to the
-          actual bonds in the simulation, in other words they do not vibrate.
-        </p>
-
-        <h3>Inproper Dihedrals Topology</h3>
-
-        <p>
-          Note how in the topology files, bonds are not represented as bonds
-          either (no functional form) but as constrains as well, and in contrast
-          the inproper torions are added
-        </p>
-
+        <h3>Gromacs files used as input</h3>
         <div class="container">
-          <h2>Topology Files</h2>
           <ul class="nav nav-tabs" id="tab-header">
-            <li class="active"><a data-toggle="tab" href="#home">Constrains</a></li>
-            <li><a data-toggle="tab" href="#menu1">Dihedrals</a></li>
+            <!-- <li class="active"><a data-toggle="tab" href="#input_home"> Cl Topology File </a></li>  -->
+            <li><a data-toggle="tab" href="#input1">Na Topology File</a></li>
+            <li><a data-toggle="tab" href="#input2">Single NA coordinates File</a></li>
+            <li><a data-toggle="tab" href="#input3">Single Cl coordinates File</a></li>
+            <li><a data-toggle="tab" href="#input4">Energy minimization parameters file</a></li>
+            <li><a data-toggle="tab" href="#input5">NVT equilibration parameters file</a></li>
+            <li><a data-toggle="tab" href="#input6">NPT equilibration parameters file</a></li>
+            <li><a data-toggle="tab" href="#input7">NPT pre-production parameters file</a></li>
+            <li><a data-toggle="tab" href="#input8">NPT production Parameters file</a></li>
+            <li><a data-toggle="tab" href="#input9">File</a></li>
           </ul>
 
           <div class="tab-content box" id="main-content">
-            <div id="home" class="tab-pane fade in active">
-              <h3>Constrains</h3>
-                <div id="topology_gist_constrains">
-                    <!-- <div id="topology_gist_constrains" class="collapse"> -->
-                <!-- added after load by a script in the main html file -->
-                </div>
+            <div id="input1" class="tab-pane fade">
+              <!-- added after load--> <div id="NA_topol"></div>
             </div>
-            <div id="menu1" class="tab-pane fade">
-                <h3>Dihedrals</h3>
-                <div id='topology_gist_angles'>
-                    <!-- added after load by a script in the main html file -->
-                </div>
+            <div id="input2" class="tab-pane fade">
+              <!-- added after load--> <div id="single_CL"></div>
+            </div>
+            <div id="input3" class="tab-pane fade">
+              <!-- added after load--> <div id="single_NA"></div>
+            </div>
+            <div id="input4" class="tab-pane fade">
+              <!-- added after load--> <div id="test_md"></div>
+            </div>
+            <div id="input5" class="tab-pane fade">
+              <!-- added after load--> <div id="energy_minimization"></div>
+            </div>
+            <div id="input6" class="tab-pane fade">
+              <!-- added after load--> <div id="NVT_equilibration"></div>
+            </div>
+            <div id="input7" class="tab-pane fade">
+              <!-- added after load--> <div id="NPT_equilibration"></div>
+            </div>
+            <div id="input8" class="tab-pane fade">
+              <!-- added after load--> <div id="NPT_pre_production"></div>
+            </div>
+            <div id="input9" class="tab-pane fade">
+              <!-- added after load--> <div id="NPT_production"></div>
             </div>
           </div>
         </div>
 
+
+
+        <p></p>
+
+        <h3></h3>
+
+        <p></p>
+
+        <h2></h2>
+
+        <div class="container">
+          <ul class="nav nav-tabs" id="tab-header">
+            <li class="active"><a data-toggle="tab" href="#home"></a></li>
+            <li><a data-toggle="tab" href="#menu1"></a></li>
+          </ul>
+
+          <div class="tab-content box" id="main-content">
+            <div id="home" class="tab-pane fade in active">
+              <h3></h3>
+                <div id="topology_gist_constrains"> <!-- added after load--> </div>
+            </div>
+            <div id="menu1" class="tab-pane fade">
+              <h3></h3>
+              <div id='topology_gist_angles'> <!-- added after load--> </div>
+            </div>
+          </div>
+        </div>
       </div>
 
       <div class="container-fluid">

@@ -72,6 +72,29 @@ footer {
     padding: 15px;
 }
 
+.button {
+    -webkit-transition-duration: 0.2s; /* Safari */
+    background-color: var(--palette-colour-1);
+    border-radius: 2px;
+    border: 1px solid  var(--default-font) ;
+    color: var(--default-font);
+    display: inline-block;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 12px;
+    padding: 4px 22px;
+    text-align: center;
+    text-decoration: none;
+    transition-duration: 0.1s;
+}
+
+.button:hover {
+    background-color: var(--default-font);
+    color: var(--palette-colour-1);
+    border-radius: 2px;
+    border: 1px solid  var(--palette-colour-1) ;
+    padding: 4px 22px;
+}
+
 .img-fluid {
     @include float-none;
     max-width: 90%;
