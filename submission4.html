@@ -2,86 +2,70 @@
 <html lang="en">
 
 <head>
-  <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" />
-  <link rel="stylesheet" type="text/css" href="css/main_style.css">
-  <title>J Sebastian Paez - CHM579 - Submission 4</title>
-  <script>
-    $(function(){
-      $( "#footer" ).load( "footer.html" );
-      $( "#header" ).load( "header.html" );
-      $( "#navbar" ).load( "navbar.html" );
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
+    <script type="text/javascript" src="js/loadSkeleton.js"></script>
+    <script type="text/javascript" src="js/loadContent.js"></script>
+    <script type="text/javascript" src="js/loadGistsAsTabs.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" />
+    <link rel="stylesheet" type="text/css" href="css/main_style.css">
+    <title>J Sebastian Paez - CHM579 - Submission 4</title>
+    <script>
+        var gist_id = "3d8b58c2aadc964da9f806564210d431";
+        var gist_elements = [
+            ["CL_topol.top", "Chloride Topology"],
+            ["NA_topol.top", "Sodium Topology"],
+            ["single_NA.gro", "Sodium Coordinates"],
+            ["single_CL.gro", "Chloride Coordinates"],
+            ["test_md.mdp", "Test parameters file (ndp)"],
+            ["energy_minimization.mdp", "Energy Minimization mdp"],
+            ["NVT_equilibration.mdp", "NVT equilibration mdp"],
+            ["NPT_equilibration.mdp", "NPT equilibration mdp"],
+            ["NPT_pre_production.mdp", "NPT pre-production mdp"],
+            ["NPT_production.mdp", "NPT production mdp"]
+        ];
 
-      function load_my_content(file) {
-        $( "#sidenav" ).append($('<div>').load( file+" #sidenav_content" ));
-        $( "#main_content" ).append($('<div>').load( file+" #content" ));
-      }
-      load_my_content("sub4/acetone.html")
-      load_my_content("sub4/ion_solvation.html")
-    })
+        for (var i = 0; i < gist_elements.length; i++) {
+            var current_element = gist_elements[i]
+            var element_id = "#" + current_element[0].replace(/\..+/, "");
 
-    function gist_element_append_to( element, gist_id, gist_element ) {
-      // Just need to add the element with a valid data-gist-id to the document, then call gist() on it
-      var unqueried_code = '<code data-gist-id="'+gist_id+'" data-gist-file="'+gist_element+'"/>'
-      function append_ () {
-        var $code = $(unqueried_code);
-        $code.appendTo( element ).gist();
-      };
-      setTimeout( function(){append_( element, gist_id, gist_element) }, 3000 );
-    };
-
-   var gist_elements = [
-     "CL_topol.top",
-     "NA_topol.top",
-     "single_NA.gro",
-     "single_CL.gro",
-     "test_md.mdp",
-     "energy_minimization.mdp",
-     "NVT_equilibration.mdp",
-     "NPT_equilibration.mdp",
-     "NPT_pre_production.mdp",
-     "NPT_production.mdp"
-   ];
-
-   var gist_id = "3d8b58c2aadc964da9f806564210d431";
-
-   for (var i = 0 ; i < gist_elements.length ; i++ ) {
-     var element_id = "#"+gist_elements[i].replace(/\..+/, "");
-     gist_element_append_to(
-       element_id,
-       gist_id,
-       gist_elements[i]);
-   };
-   /* gist_element_append_to( "#CL_topol", "3d8b58c2aadc964da9f806564210d431", "CL_topol.top")
-    * gist_element_append_to( "#NA_topol", "3d8b58c2aadc964da9f806564210d431", "NA_topol.top")*/
-  </script>
+            gist_element_append_as_tab(
+                element_id,
+                gist_id,
+                current_element[0],
+                current_element[1],
+                "#gromacsTabHeader",
+                "#gromacsTabsContent"
+            );
+        };
+    </script>
 </head>
 
 <body>
 
-  <div id="navbar"> </div>
+    <div id="navbar"> </div>
 
-  <div class="container-fluid text-center">
-    <div class="row row-eq-height content">
+    <div class="container-fluid text-center">
+        <div class="row row-eq-height content">
 
-      <div class="col-md-2 sidenav">
-        <div id="sidenav" class="box"> </div>
-      </div>
+            <div class="col-md-2 sidenav">
+                <div id="sidenav" class="box"> </div>
+            </div>
 
-      <div class="col-md-10 text-left content-area">
-        <div id="main_content" class="box"> </div>
-      </div>
+            <div class="col-md-10 text-left content-area">
+                <div id="main_content" class="box"> </div>
+            </div>
 
+        </div>
     </div>
-  </div>
 
-<div id="footer"></div>
+    <div id="footer"></div>
 
 </body>
+
 </html>
