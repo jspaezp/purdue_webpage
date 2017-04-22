@@ -10,29 +10,34 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gist-embed/2.4/gist-embed.min.js"></script>
     <script type="text/javascript" src="js/loadSkeleton.js"></script>
     <script type="text/javascript" src="js/loadContent.js"></script>
+    <script type="text/javascript" src="js/loadContentAsTabs.js"></script>
     <script type="text/javascript" src="js/loadGistsAsTabs.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" />
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
     <title>J Sebastian Paez - CHM579 - Submission 4</title>
     <script>
-        var gist_id = "3d8b58c2aadc964da9f806564210d431";
-        var gist_elements = [
-            ["CL_topol.top", "Chloride Topology"],
-            ["NA_topol.top", "Sodium Topology"],
-            ["single_NA.gro", "Sodium Coordinates"],
-            ["single_CL.gro", "Chloride Coordinates"],
-            ["test_md.mdp", "Test parameters file (ndp)"],
-            ["energy_minimization.mdp", "Energy Minimization mdp"],
-            ["NVT_equilibration.mdp", "NVT equilibration mdp"],
-            ["NPT_equilibration.mdp", "NPT equilibration mdp"],
-            ["NPT_pre_production.mdp", "NPT pre-production mdp"],
-            ["NPT_production.mdp", "NPT production mdp"]
-        ];
+        $(function() {
+            load_my_content("sub4/ions_in_water.html")
+            // load_my_content("sub4/ion_solvation.html")
+        })
+        var gist_id = "3d8b58c2aadc964da9f806564210d431",
+            gist_elements = [
+                ["CL_topol.top", "Chloride Topology"],
+                ["NA_topol.top", "Sodium Topology"],
+                ["single_NA.gro", "Sodium Coordinates"],
+                ["single_CL.gro", "Chloride Coordinates"],
+                ["test_md.mdp", "Test parameters file (ndp)"],
+                ["energy_minimization.mdp", "Energy Minimization mdp"],
+                ["NVT_equilibration.mdp", "NVT equilibration mdp"],
+                ["NPT_equilibration.mdp", "NPT equilibration mdp"],
+                ["NPT_pre_production.mdp", "NPT pre-production mdp"],
+                ["NPT_production.mdp", "NPT production mdp"]
+            ];
 
         for (var i = 0; i < gist_elements.length; i++) {
-            var current_element = gist_elements[i]
-            var element_id = "#" + current_element[0].replace(/\..+/, "");
+            var current_element = gist_elements[i],
+                element_id = "#" + current_element[0].replace(/\..+/, "");
 
             gist_element_append_as_tab(
                 element_id,
@@ -43,6 +48,22 @@
                 "#gromacsTabsContent"
             );
         };
+
+        var added_elements = [
+            ["adasdasd", "sub4/ions_in_water/test1.html", "#tabname"],
+            ["adasdasd", "sub4/ions_in_water/test1.html", "#tabname"],
+            ["adasdasd", "sub4/ions_in_water/test1.html", "#tabname"],
+            ["adasdasd", "sub4/ions_in_water/test1.html", "#tabname"]
+        ]
+
+        for (var i = 0; i < added_elements.length; i++) {
+            elementAppendAsTab(added_elements[i][0],
+                added_elements[i][1],
+                added_elements[i][2],
+                "#ionsOneHeader",
+                "#ionsOneContent"
+            )
+        }
     </script>
 </head>
 
