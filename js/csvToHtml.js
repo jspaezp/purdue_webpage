@@ -41,7 +41,7 @@ function _csvToHtml (csvLocation, containerToAppend) {
 
 function csvToHtml(csvLocation, containerToAppend) {
     setTimeout(function() {
-        appendTab(csvLocation, containerToAppend)
+        _csvToHtml(csvLocation, containerToAppend)
     }, 2000);
 }
 

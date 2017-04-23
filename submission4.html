@@ -12,15 +12,21 @@
     <script type="text/javascript" src="js/loadContent.js"></script>
     <script type="text/javascript" src="js/loadContentAsTabs.js"></script>
     <script type="text/javascript" src="js/loadGistsAsTabs.js"></script>
-    <script type="text/javascript" src="js/csvToHtml.js"></script>
+    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Inconsolata|Noto+Sans" />
     <link rel="stylesheet" type="text/css" href="css/main_style.css">
+    <script type="text/javascript" src="js/csvToHtml.js"></script>
+    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
     <title>J Sebastian Paez - CHM579 - Submission 4</title>
     <script>
         $(function() {
-            load_my_content("sub4/ions_in_water.html")
-            // load_my_content("sub4/ion_solvation.html")
+            load_my_content("sub4/ions_in_water.html");
+            load_my_content("sub4/solvation_energy.html");
+            load_my_content("sub4/candock.html");
         })
         var gist_id = "3d8b58c2aadc964da9f806564210d431",
             gist_elements = [
@@ -64,7 +70,18 @@
                 "#ionsOneHeader",
                 "#ionsOneContent"
             )
-        }
+        };
+
+        //csvToHtml('sub4/candock/scores.csv', '#score_table');
+
+        setTimeout(function() {
+            CsvToHtmlTable.init({
+                csv_path: 'sub4/candock/scores.csv',
+                element: 'score_table',
+                allow_download: true,
+                csv_options: {separator: ',', delimiter: '"'},
+                datatables_options: {"paging": false}});
+        }, 2000);
     </script>
 </head>
 
