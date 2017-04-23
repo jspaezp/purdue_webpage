@@ -26,9 +26,9 @@ function gist_element_append_as_tab(
         $code.appendTo(element).gist();
     };
     setTimeout(function() {
-        appendTab(element, gist_id, gist_element)
+        appendTab()
     }, 2000);
     setTimeout(function() {
-        appendContent(element, gist_id, gist_element)
+        appendContent()
     }, 3000);
 };
