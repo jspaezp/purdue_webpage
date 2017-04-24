@@ -1,4 +1,3 @@
-
-$( "#footer" ).load( "footer.html" );
-$( "#header" ).load( "header.html" );
-$( "#navbar" ).load( "navbar.html" );
+$( "#footer" ).load( "/footer.html" );
+$( "#header" ).load( "/header.html" );
+$( "#navbar" ).load( "/navbar.html" );
