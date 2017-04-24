@@ -1,17 +1,18 @@
-1, loratadine, -30.6759
-1, ZD6, -46.8439
-1, testosterone, -23.5565
-1, fluoxetine, -24.0137
-1, P30, -41.5515
-1, sulfaguanidine, -31.8558
-1, ibuprofen, -28.0279
-1, penicillin_g, -41.1633
-1, SAV, -33.7772
-1, YMX, -30.4032
-1, etiracetam, -18.4723
-1, IRE, -50.8271
-1, STI, -38.2155
-1, 1N1, -48.8593
-1, capsaicin, -34.4062
-1, captopril, -21.9204
-1, KIM, -38.0596
+Compound, Score
+loratadine, -30.6759
+ZD6, -46.8439
+testosterone, -23.5565
+fluoxetine, -24.0137
+P30, -41.5515
+sulfaguanidine, -31.8558
+ibuprofen, -28.0279
+penicillin_g, -41.1633
+SAV, -33.7772
+YMX, -30.4032
+etiracetam, -18.4723
+IRE, -50.8271
+STI, -38.2155
+1N1, -48.8593
+capsaicin, -34.4062
+captopril, -21.9204
+KIM, -38.0596

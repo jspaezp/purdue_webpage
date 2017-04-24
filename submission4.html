@@ -79,9 +79,44 @@
                 csv_path: 'sub4/candock/scores.csv',
                 element: 'score_table',
                 allow_download: true,
-                csv_options: {separator: ',', delimiter: '"'},
-                datatables_options: {"paging": false}});
+                csv_options: {
+                    separator: ',',
+                    delimiter: '"'
+                },
+                datatables_options: {
+                    "paging": false
+                }
+            });
         }, 2000);
+
+        function append_table(csv_path, element) {
+            setTimeout(function() {
+                CsvToHtmlTable.init({
+                    csv_path: csv_path,
+                    element: element,
+                    allow_download: true,
+                    csv_options: {
+                        separator: ',',
+                        delimiter: '"'
+                    },
+                    datatables_options: {
+                        "paging": false
+                    }
+                });
+            }, 2000);
+        }
+
+        var csv_tables = [
+            ['sub4/ions_in_water/data/single_CL_energies.csv', 'single_CL_table'],
+            ['sub4/ions_in_water/data/single_NA_energies.csv', 'single_NA_table'],
+            ['sub4/ions_in_water/data/six_CL_energies.csv', 'six_CL_table'],
+            ['sub4/ions_in_water/data/six_NA_energies.csv', 'six_NA_table'],
+            ['sub4/ions_in_water/data/neutralized_CL_energies.csv', 'eq_ions_table']
+        ];
+
+        for (var i = 0; i < csv_tables.length; i++) {
+            append_table(csv_tables[i][0], csv_tables[i][1]);
+        };
     </script>
 </head>
 

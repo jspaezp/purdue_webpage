@@ -1,0 +1,12 @@
+Energy                   ,  Average , Err.Est. ,     RMSD, Tot-Drift
+LJ (SR)                  ,  4024.39 ,      2.8 ,  142.751,   15.6478  (kJ/mol)
+Coulomb (SR)             , -20653.8 ,      8.2 ,  210.537,  -40.3372  (kJ/mol)
+Coul. recip.             ,   -1.221 ,     0.27 ,  8.64946, -0.195965  (kJ/mol)
+LJ recip.                , -973.955 ,     0.47 ,  12.4655,    2.1281  (kJ/mol)
+Potential                , -17604.6 ,      6.1 ,  120.838,  -22.7572  (kJ/mol)
+Coul-SR:CL-CL            , -20653.8 ,      8.2 ,  210.537,  -40.3372  (kJ/mol)
+LJ-SR:CL-CL              ,  4024.39 ,      2.8 ,  142.751,   15.6478  (kJ/mol)
+Coul-SR:CL-SOL           ,        0 ,        0 ,        0,         0  (kJ/mol)
+LJ-SR:CL-SOL             ,        0 ,        0 ,        0,         0  (kJ/mol)
+Coul-SR:SOL-SOL          ,        0 ,        0 ,        0,         0  (kJ/mol)
+LJ-SR:SOL-SOL            ,        0 ,        0 ,        0,         0  (kJ/mol)
