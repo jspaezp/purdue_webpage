@@ -1,6 +1,6 @@
 <html>
 <div id="sidenav_content">
-    <p><a href="#single_ions">Single Ions in Water</a></p>
+    <p><a href="#ions">Single Ions in Water</a></p>
     <hr/>
 </div>
 
@@ -37,16 +37,11 @@
                     <li><a data-toggle="tab" href="#single_na_tab">Single Na</a></li>
                     <li><a data-toggle="tab" href="#six_cl_tab">Six Cl</a></li>
                     <li><a data-toggle="tab" href="#six_na_tab">Six Na</a></li>
-                    <li><a data-toggle="tab" href="#six_na_six_cl_tab"">Six Cl and Six Na</a></li>
+                    <li>
+                        <a data-toggle="tab" href="#six_na_six_cl_tab">Six Cl and Six Na</a></li>
                 </ul>
                 <div class="tab-content box" id="gromacsTabsContent">
-                    <div id="home" class="tab-pane fade in active">
-                        <center>
-                            <h5>Click Content to Display :D </h5>
-                        </center>
-                    </div>
-
-                    <div id="single_cl_tab" class="tab-pane fade">
+                    <div id="single_cl_tab" class="tab-pane fade in active">
                         <div id="single_CL_table"> </div>
                     </div>
                     <div id="single_na_tab" class="tab-pane fade">
@@ -63,33 +58,43 @@
                     </div>
                 </div>
             </div>
-            <p></p>
 
-            <h3></h3>
+            <h2>Radial Distributions</h2>
 
-            <p></p>
-
-            <h2></h2>
+            <div class="container">
+                <!-- added on load by js :D -->
+                <ul class="nav nav-tabs" id="rdfHeader"> </ul>
+                <div class="tab-content box" id="rdfContent">
+                    <div class="tab-pane fade in active">
+                        <h5>Click the tab to display :D</h5>
+                    </div>
+                </div>
+            </div>
+            <hr/>
 
             <div class="container">
                 <!-- added on load by js :D -->
                 <ul class="nav nav-tabs" id="ionsOneHeader"> </ul>
                 <div class="tab-content box" id="ionsOneContent">
-                    <center>
-                        <h5>Click Content to Display</h5>
-                    </center>
+                    <div class="tab-pane fade in active">
+                        <h5>Click the tab to display :D</h5>
+                    </div>
                 </div>
             </div>
+            <hr/>
         </div>
+
+        <hr/>
 
         <div class="container-fluid">
             <h2></h2>
             <div class="container-fluid">
-                <img src="media/sub3/acetone_distances/acetone_equilibration_NVT_energy.xvg.png" class="facet-img-fluid-left" />
-                <img src="media/sub3/acetone_angles/acetone_equilibration_NVT_energy.xvg.png" class="facet-img-fluid-left" />
+                <img src="" class="facet-img-fluid-left" />
+                <img src="" class="facet-img-fluid-left" />
             </div>
-
         </div>
+
+        <img onload="loadAppendsIonsInWater()" class="img-fluid" src="media/spacer.png" />
 
     </div>
     <hr/>
