@@ -1,4 +1,4 @@
-function elementAppendAsTab(
+function imageAppendAsTab(
     tab_title, source, elementId, tabHeaderId, tabContentsId
 ) {
     // Just need to add the element with a valid data-gist-id to the document, then call gist() on it
@@ -10,21 +10,16 @@ function elementAppendAsTab(
         '</a><li/>';
     var tabDiv = '<div class="tab-pane fade" id="' +
         elementId.replace(/#/, "div_") +
-        '"><div id="' + elementId.replace(/#/, "") + '"></div></div>';
+        '"><div class="container-fluid"><img class="img-fluid" src="'+
+        source+
+        '"/></div></div>';
 
     function appendTab() {
         $(tabHeaderElement).appendTo(tabHeaderId);
         $(tabDiv).appendTo(tabContentsId);
     };
 
-    function appendContent() {
-        $('<div>').load(source + " #content").appendTo(elementId);
-    };
     setTimeout(function() {
         appendTab();
-    }, 2000);
-    setTimeout(function() {
-        appendContent();
-    }, 3000);
+    }, 1000);
 };
-
