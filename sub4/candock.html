@@ -5,7 +5,6 @@
 </div>
 
 <div id="content">
-    <!-- <div id="acetone" class ="container-fluid"> -->
     <div id="candock" class="container-fluid">
         <h1>Molecular Docking with Candock</h1>
         <div id="simulation_water" class="container-fluid">
@@ -13,7 +12,7 @@
             <p></p>
 
             <h3>Docking Procedure</h3>
-            <div class="container">
+            <div class="container-fluid">
                 <!-- added on load by js :D -->
                 <ul class="nav nav-tabs" id="candockProcedureTabHeader"> </ul>
                 <div class="tab-content box" id="candockProcedureTabsContent">
@@ -23,34 +22,40 @@
                         </center>
                     </div>
                 </div>
+                <hr/>
             </div>
 
             <h3>Scores of the docked compounds</h3>
 
-            <div class="container" id="score_table"> </div>
+            <div class="container-fluid" id="score_table"> </div>
 
             <h3>Depiction of selected compounds</h3>
 
-            <div class="container">
+            <div class="container-fluid">
                 <!-- added on load by js :D -->
-                <ul class="nav nav-tabs" id="candockTabHeader"> </ul>
-                <div class="tab-content box" id="candockTabsContent">
+                <ul class="nav nav-tabs" id="candockSidesTabHeader"> </ul>
+                <div class="tab-content box" id="candockSidesTabsContent">
                     <div id="home" class="tab-pane fade in active">
                         <center>
                             <h5>Click Content to Display :D </h5>
                         </center>
                     </div>
                 </div>
+                <hr/>
             </div>
 
             <img onload="loadAppendGromacs()" class="img-fluid" src="media/spacer.png" />
-
+        </div>
+        <div id="lead_optimization" class="container-fluid">
+            
             <h3>Discusion</h3>
+            <hr/>
             <h3>References</h3>
+            <hr/>
         </div>
 
     </div>
-    <hr/>
+
 </div>
 
 </html>

@@ -30,48 +30,96 @@ function loadAppendsIonsInWater() {
     };
 
     // Radial Distribution Functions
-    var added_elements = [
+    var addedRDFs = [
         [
             "RDF Single Ions in Water",
             "sub4/ions_in_water/single_ion_rdf.html",
-            "#single_ion_rdf",
-            "#rdfHeader",
-            "#rdfContent"
+            "#single_ion_rdf"
         ],
         [
             "RDF Six Ions in Water",
             "sub4/ions_in_water/six_ions_rdf.html",
-            "#six_ions_rdf",
-            "#rdfHeader",
-            "#rdfContent"
+            "#six_ions_rdf"
         ],
         [
             "RDF of equilibrated Ions in water",
             "sub4/ions_in_water/eq_ions.html",
-            "#eq_ion_rdf",
-            "#rdfHeader",
-            "#rdfContent"
+            "#eq_ion_rdf"
         ]
     ];
 
 
-    for (var i = 0; i < added_elements.length; i++) {
+    for (var i = 0; i < addedRDFs.length; i++) {
         elementAppendAsTab(
-            added_elements[i][0],
-            added_elements[i][1],
-            added_elements[i][2],
-            added_elements[i][3],
-            added_elements[i][4]
+            addedRDFs[i][0],
+            addedRDFs[i][1],
+            addedRDFs[i][2],
+            "#rdfHeader",
+            "#rdfContent"
         );
     };
 
-    imageAppendAsTab(
-        "This is a simple test",
-        "sub4/candock/media/ibuprofen.png",
-        "#ibuprofen_side",
-        "#rdfHeader",
-        "#rdfContent"
-    );
+
+
+
+
+    var candockMolecules = [
+        [
+            "P30",
+            "sub4/candock/media/p30_ligand_sideview.png",
+            "#p30_side"
+        ],
+        [
+            "1N1",
+            "sub4/candock/media/1N1_ligand_sideview.png",
+            "#1n1_side"
+        ],
+        [
+            "IRE",
+            "sub4/candock/media/IRE_ligand_sideview.png",
+            "#ire_side"
+        ],
+        [
+            "Penicillin G",
+            "sub4/candock/media/penicillin_g.png",
+            "#penicillin_side"
+        ],
+        [
+            "Etiracetam",
+            "sub4/candock/media/etiracetam_ligand_sideview.png",
+            "#etiracetam_side"
+        ],
+        [
+            "Fluoxotine",
+            "sub4/candock/media/fluoxotine_ligand_sideview.png",
+            "#fluoxotine_side"
+        ],
+        [
+            "Ibuprofen",
+            "sub4/candock/media/ibuprofen.png",
+            "#ibuprofen_side"
+        ],
+        [
+            "Testosterone",
+            "sub4/candock/media/testosterone_side.png",
+            "#testosterone_side"
+        ],
+        [
+            "All Ligands",
+            "sub4/candock/media/pocket_all_ligands.png",
+            "#all_side_Ligands"
+        ]
+    ];
+
+    for (var i = 0; i < candockMolecules.length; i++) {
+        imageAppendAsTab(
+            candockMolecules[i][0],
+            candockMolecules[i][1],
+            candockMolecules[i][2],
+            "#candockSidesTabHeader",
+            "#candockSidesTabsContent"
+        );
+    };
 
     // CSV tables
     var sub4DataPath = 'sub4/ions_in_water/data/';
