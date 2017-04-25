@@ -12,6 +12,9 @@ function elementAppendAsTab(
         elementId.replace(/#/, "div_") +
         '"><div id="' + elementId.replace(/#/, "") + '"></div></div>';
 
+    console.log(tabDiv);
+    console.log(tabHeaderElement);
+
     appendTab = function() {
         $(tabHeaderElement).appendTo(tabHeaderId);
         $(tabDiv).appendTo(tabContentsId);
@@ -20,12 +23,8 @@ function elementAppendAsTab(
     appendContent = function() {
         $('<div>').load(source + " #content").appendTo(elementId);
     };
-    setTimeout(function() {
-        appendTab();
-    }, 2000);
-    setTimeout(function() {
-        appendContent();
-    }, 3000);
+    appendTab();
+    appendContent();
 }
 
 

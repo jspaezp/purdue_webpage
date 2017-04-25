@@ -3,23 +3,17 @@ function append_table_as_html(csv, element_to_append_to) {
         var data = $.csv.toArrays(csv),
             columns = [];
 
-        console.log(data)
         //create the columns object
         for (var i = 0; i < data[0].length; i++) {
             (function(col) {
                 columns.push({
                     title: col
                 });
-                console.log(col)
             })(data[0][i]);
         }
 
         //remove the CSV header row for convenience 
         data.splice(0, 1);
-
-        console.log(data)
-        console.log(element_to_append_to)
-        console.log(String(columns))
 
         //create the dataTable
         var table = $(element_to_append_to).DataTable({
@@ -29,7 +23,6 @@ function append_table_as_html(csv, element_to_append_to) {
         //insert rows
         for (var i = 0; i < data.length; i++) {
             (function(row) {
-                console.log(row);
                 table.row.add(row).draw();
             })(data[i]);
         }
@@ -54,7 +47,6 @@ function _append_as_table(csv, element_to_append_to) {
                 // start a table row
                 html += '<tr>';
                 for (var column = 0; column < columns.length; column++) {
-                    console.log(columns[column])
                     html += col_sep_open + columns[column] + col_sep_close;
                 }
                 // close row
