@@ -1,3 +1,84 @@
+function append_table_as_html(csv, element_to_append_to) {
+    $.get(csv, function(csv) {
+        var data = $.csv.toArrays(csv),
+            columns = [];
+
+        console.log(data)
+        //create the columns object
+        for (var i = 0; i < data[0].length; i++) {
+            (function(col) {
+                columns.push({
+                    title: col
+                });
+                console.log(col)
+            })(data[0][i]);
+        }
+
+        //remove the CSV header row for convenience 
+        data.splice(0, 1);
+
+        console.log(data)
+        console.log(element_to_append_to)
+        console.log(String(columns))
+
+        //create the dataTable
+        var table = $(element_to_append_to).DataTable({
+            columns: columns
+        });
+
+        //insert rows
+        for (var i = 0; i < data.length; i++) {
+            (function(row) {
+                console.log(row);
+                table.row.add(row).draw();
+            })(data[i]);
+        }
+    });
+}
+
+function _append_as_table(csv, element_to_append_to) {
+    $.get(csv, function(data) {
+        // start the table
+        var html = '<div class="container-fluid"><table class="table table-striped"><thead>';
+
+        // split into lines
+        var rows = data.split("\n");
+
+        // split header
+        var headers = rows.splice(0, 1);
+
+        function generate_row(rowstring, col_sep_open, col_sep_close) {
+            // split line into columns
+            var columns = rowstring.split(",");
+            if (columns.length > 1) {
+                // start a table row
+                html += '<tr>';
+                for (var column = 0; column < columns.length; column++) {
+                    console.log(columns[column])
+                    html += col_sep_open + columns[column] + col_sep_close;
+                }
+                // close row
+                html += '</tr>';
+            }
+        }
+
+        generate_row(headers[0], '<th>', '</th>');
+        html += '</thead><tbody>';
+
+        // parse lines
+        for (var i = 0; i < rows.length; i++) {
+            generate_row(rows[i], '<td>', '</td>')
+        }
+
+        // close table
+        html += '</tbody></table></div>';
+
+        // insert into div
+        $(element_to_append_to).append(html);
+    });
+}
+
+
 function loadAppendsIonsInWater() {
 
     // Gists
@@ -48,7 +129,6 @@ function loadAppendsIonsInWater() {
         ]
     ];
 
-
     for (var i = 0; i < addedRDFs.length; i++) {
         elementAppendAsTab(
             addedRDFs[i][0],
@@ -64,33 +144,31 @@ function loadAppendsIonsInWater() {
     var sub4DataPath = 'sub4/ions_in_water/data/';
 
     var csv_tables = [
-        [sub4DataPath + 'single_CL_energies.csv', 'single_CL_table'],
-        [sub4DataPath + 'single_NA_energies.csv', 'single_NA_table'],
-        [sub4DataPath + 'six_CL_energies.csv', 'six_CL_table'],
-        [sub4DataPath + 'six_NA_energies.csv', 'six_NA_table'],
-        [sub4DataPath + 'neutralized_CL_energies.csv', 'eq_ions_table']
+        [sub4DataPath + 'single_CL_energies.csv', '#single_CL_table'],
+        [sub4DataPath + 'single_NA_energies.csv', '#single_NA_table'],
+        [sub4DataPath + 'six_CL_energies.csv', '#six_CL_table'],
+        [sub4DataPath + 'six_NA_energies.csv', '#six_NA_table'],
+        [sub4DataPath + 'neutralized_CL_energies.csv', '#eq_ions_table']
     ];
 
     for (var i = 0; i < csv_tables.length; i++) {
-        append_table(csv_tables[i][0], csv_tables[i][1]);
-    };
-};
+        _append_as_table(csv_tables[i][0], csv_tables[i][1])
+    }
+}
 
 function loadAppendCandock() {
-    // setTimeout(function() {
-        CsvToHtmlTable.init({
-            csv_path: 'sub4/candock/scores.csv',
-            element: 'score_table',
-            allow_download: true,
-            csv_options: {
-                separator: ',',
-                delimiter: '"'
-            },
-            datatables_options: {
-                "paging": false
-            }
-        });
-    // }, 2000);
+    CsvToHtmlTable.init({
+        csv_path: 'sub4/candock/scores.csv',
+        element: 'score_table',
+        allow_download: true,
+        csv_options: {
+            separator: ',',
+            delimiter: '"'
+        },
+        datatables_options: {
+            "paging": false
+        }
+    });
 
     var candockMolecules = [
         [

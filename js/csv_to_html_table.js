@@ -14,12 +14,12 @@ CsvToHtmlTable = {
       $("#" + el).html("<table class='table table-striped table-condensed' id='" + el + "-table'></table>");
 
       $.when($.get(csv_path)).then(
-        function(data){      
+        function(data){
           var csv_data = $.csv.toArrays(data, csv_options);
-          
+
           var table_head = "<thead><tr>";
 
-          for (head_id = 0; head_id < csv_data[0].length; head_id++) { 
+          for (head_id = 0; head_id < csv_data[0].length; head_id++) {
             table_head += "<th>" + csv_data[0][head_id] + "</th>";
           }
 
@@ -27,7 +27,7 @@ CsvToHtmlTable = {
           $('#' + el + '-table').append(table_head);
           $('#' + el + '-table').append("<tbody></tbody>");
 
-          for (row_id = 1; row_id < csv_data.length; row_id++) { 
+          for (row_id = 1; row_id < csv_data.length; row_id++) {
             var row_html = "<tr>";
 
             //takes in an array of column index and function pairs
@@ -39,10 +39,10 @@ CsvToHtmlTable = {
               })
             }
 
-            for (col_id = 0; col_id < csv_data[row_id].length; col_id++) { 
+            for (col_id = 0; col_id < csv_data[row_id].length; col_id++) {
               row_html += "<td>" + csv_data[row_id][col_id] + "</td>";
             }
-              
+
             row_html += "</tr>";
             $('#' + el + '-table tbody').append(row_html);
           }
