@@ -60,8 +60,37 @@ function loadAppendsIonsInWater() {
     };
 
 
+    // CSV tables
+    var sub4DataPath = 'sub4/ions_in_water/data/';
 
+    var csv_tables = [
+        [sub4DataPath + 'single_CL_energies.csv', 'single_CL_table'],
+        [sub4DataPath + 'single_NA_energies.csv', 'single_NA_table'],
+        [sub4DataPath + 'six_CL_energies.csv', 'six_CL_table'],
+        [sub4DataPath + 'six_NA_energies.csv', 'six_NA_table'],
+        [sub4DataPath + 'neutralized_CL_energies.csv', 'eq_ions_table']
+    ];
 
+    for (var i = 0; i < csv_tables.length; i++) {
+        append_table(csv_tables[i][0], csv_tables[i][1]);
+    };
+};
+
+function loadAppendCandock() {
+    // setTimeout(function() {
+        CsvToHtmlTable.init({
+            csv_path: 'sub4/candock/scores.csv',
+            element: 'score_table',
+            allow_download: true,
+            csv_options: {
+                separator: ',',
+                delimiter: '"'
+            },
+            datatables_options: {
+                "paging": false
+            }
+        });
+    // }, 2000);
 
     var candockMolecules = [
         [
@@ -120,36 +149,4 @@ function loadAppendsIonsInWater() {
             "#candockSidesTabsContent"
         );
     };
-
-    // CSV tables
-    var sub4DataPath = 'sub4/ions_in_water/data/';
-
-    var csv_tables = [
-        [sub4DataPath + 'single_CL_energies.csv', 'single_CL_table'],
-        [sub4DataPath + 'single_NA_energies.csv', 'single_NA_table'],
-        [sub4DataPath + 'six_CL_energies.csv', 'six_CL_table'],
-        [sub4DataPath + 'six_NA_energies.csv', 'six_NA_table'],
-        [sub4DataPath + 'neutralized_CL_energies.csv', 'eq_ions_table']
-    ];
-
-    for (var i = 0; i < csv_tables.length; i++) {
-        append_table(csv_tables[i][0], csv_tables[i][1]);
-    };
-};
-
-function loadAppendGromacs() {
-    setTimeout(function() {
-        CsvToHtmlTable.init({
-            csv_path: 'sub4/candock/scores.csv',
-            element: 'score_table',
-            allow_download: true,
-            csv_options: {
-                separator: ',',
-                delimiter: '"'
-            },
-            datatables_options: {
-                "paging": false
-            }
-        });
-    }, 2000);
 }
