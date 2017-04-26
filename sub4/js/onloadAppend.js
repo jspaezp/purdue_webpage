@@ -12,7 +12,7 @@ function append_table_as_html(csv, element_to_append_to) {
             })(data[0][i]);
         }
 
-        //remove the CSV header row for convenience 
+        //remove the CSV header row for convenience
         data.splice(0, 1);
 
         //create the dataTable
@@ -140,7 +140,8 @@ function loadAppendsIonsInWater() {
         [sub4DataPath + 'single_NA_energies.csv', '#single_NA_table'],
         [sub4DataPath + 'six_CL_energies.csv', '#six_CL_table'],
         [sub4DataPath + 'six_NA_energies.csv', '#six_NA_table'],
-        [sub4DataPath + 'neutralized_CL_energies.csv', '#eq_ions_table']
+        [sub4DataPath + 'neutralized_CL_energies.csv', '#eq_ions_table'],
+        [sub4DataPath + 'diffussion_coefficients.csv', '#diff_coefs']
     ];
 
     for (var i = 0; i < csv_tables.length; i++) {

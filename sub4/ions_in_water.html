@@ -1,96 +1,90 @@
+<!DOCTYPE html>
 <html>
-<div id="sidenav_content">
-    <p><a href="#ions">Single Ions in Water</a></p>
-    <hr/>
-</div>
+	<body>
 
-<div id="content">
-    <!-- <div id="acetone" class ="container-fluid"> -->
-    <div id="ions" class="container-fluid">
-        <h1>Modelling Ions In Water</h1>
-        <div id="simulation_water" class="container-fluid">
-            <h2>Single Ions</h2>
-            <p>
-                In order to simulate the interactions of singular ions with the media, an ensamble of water TIP3 water molecules was generated with the addition of a single ion, either Sodium or Chloride.
-            </p>
+		<div id="sidenav_content">
+			<p><a href="#ions">Single Ions in Water</a></p>
+			<hr/>
+		</div>
 
-            <h3>Gromacs files used as input</h3>
+		<div id="content">
+			<!-- <div id="acetone" class ="container-fluid"> -->
+			<div id="ions" class="container-fluid">
+				<h1>Modelling Ions In Water</h1>
+				<div id="simulation_water" class="container-fluid">
+					<h2>Single Ions</h2>
+					<p>
+						In order to simulate the interactions of singular ions with the media, an ensamble of water TIP3 water molecules was generated with the addition of a single ion, either Sodium or Chloride.
+					</p>
 
-            <div class="container">
-                <!-- added on load by js :D -->
-                <ul class="nav nav-tabs" id="gromacsTabHeader"> </ul>
-                <div class="tab-content box" id="gromacsTabsContent">
-                    <div id="home" class="tab-pane fade in active">
-                        <center>
-                            <h5>Click Content to Display :D </h5>
-                        </center>
-                    </div>
-                </div>
-                <hr/>
-            </div>
+					<h3>Gromacs files used as input</h3>
 
-            <h3>Calculated Energies</h3>
+					<div class="container">
+						<!-- added on load by js :D -->
+						<ul class="nav nav-tabs" id="gromacsTabHeader"> </ul>
+						<div class="tab-content box" id="gromacsTabsContent">
+							<div id="home" class="tab-pane fade in active">
+								<h5>Click Content to Display :D </h5>
+							</div>
+						</div>
+						<hr/>
+					</div>
 
-            <div class="container">
-                <!-- added on load by js :D -->
-                <ul class="nav nav-tabs" id="gromacsTabHeader">
-                    <li><a data-toggle="tab" href="#single_cl_tab">Single Cl</a></li>
-                    <li><a data-toggle="tab" href="#single_na_tab">Single Na</a></li>
-                    <li><a data-toggle="tab" href="#six_cl_tab">Six Cl</a></li>
-                    <li><a data-toggle="tab" href="#six_na_tab">Six Na</a></li>
-                    <li>
-                        <a data-toggle="tab" href="#six_na_six_cl_tab">Six Cl and Six Na</a></li>
-                </ul>
-                <div class="tab-content box" id="gromacsTabsContent">
-                    <div id="single_cl_tab" class="tab-pane fade in active">
-                        <div id="single_CL_table"> </div>
-                    </div>
-                    <div id="single_na_tab" class="tab-pane fade">
-                        <div id="single_NA_table"> </div>
-                    </div>
-                    <div id="six_cl_tab" class="tab-pane fade">
-                        <div id="six_CL_table"> </div>
-                    </div>
-                    <div id="six_na_tab" class="tab-pane fade">
-                        <div id="six_NA_table"> </div>
-                    </div>
-                    <div id="six_na_six_cl_tab" class="tab-pane fade">
-                        <div id="eq_ions_table"> </div>
-                    </div>
-                </div>
-                <hr/>
-            </div>
+					<h3>Calculated Energies</h3>
 
-            <h2>Radial Distributions</h2>
+					<div class="container">
+						<!-- added on load by js :D -->
+						<ul class="nav nav-tabs" id="gromacsTabHeader">
+							<li><a data-toggle="tab" href="#single_cl_tab">Single Cl</a></li>
+							<li><a data-toggle="tab" href="#single_na_tab">Single Na</a></li>
+							<li><a data-toggle="tab" href="#six_cl_tab">Six Cl</a></li>
+							<li><a data-toggle="tab" href="#six_na_tab">Six Na</a></li>
+							<li>
+								<a data-toggle="tab" href="#six_na_six_cl_tab">Six Cl and Six Na</a></li>
+						</ul>
+						<div class="tab-content box" id="gromacsTabsContent">
+							<div id="single_cl_tab" class="tab-pane fade in active">
+								<div id="single_CL_table"> </div>
+							</div>
+							<div id="single_na_tab" class="tab-pane fade">
+								<div id="single_NA_table"> </div>
+							</div>
+							<div id="six_cl_tab" class="tab-pane fade">
+								<div id="six_CL_table"> </div>
+							</div>
+							<div id="six_na_tab" class="tab-pane fade">
+								<div id="six_NA_table"> </div>
+							</div>
+							<div id="six_na_six_cl_tab" class="tab-pane fade">
+								<div id="eq_ions_table"> </div>
+							</div>
+						</div>
+						<hr/>
+						<h3>Calculated Diffussion coefficients</h3>
+						<div class="container-fluid" id="diff_coefs"></div>
+					</div>
 
-            <div class="container">
-                <!-- added on load by js :D -->
-                <ul class="nav nav-tabs" id="rdfHeader"> </ul>
-                <div class="tab-content box" id="rdfContent">
-                    <div class="tab-pane fade in active">
-                        <h5>Click the tab to display :D</h5>
-                    </div>
-                </div>
-                <hr/>
-            </div>
+					<h2>Radial Distributions</h2>
 
-            <hr/>
-        </div>
+					<div class="container">
+						<!-- added on load by js :D -->
+						<ul class="nav nav-tabs" id="rdfHeader"> </ul>
+						<div class="tab-content box" id="rdfContent">
+							<div class="tab-pane fade in active">
+								<h5>Click the tab to display :D</h5>
+							</div>
+						</div>
+						<hr/>
+					</div>
 
-        <hr/>
+					<hr/>
+				</div>
 
-        <div class="container-fluid">
-            <h2></h2>
-            <div class="container-fluid">
-                <img src="" class="facet-img-fluid-left" />
-                <img src="" class="facet-img-fluid-left" />
-                <hr/>
-            </div>
-        </div>
+				<hr/>
 
+			</div>
+			<hr/>
+		</div>
 
-    </div>
-    <hr/>
-</div>
-
+	</body>
 </html>
