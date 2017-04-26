@@ -221,3 +221,33 @@ function loadAppendCandock() {
         );
     };
 }
+
+function loadAppendsSolvation() {
+    var thermodynamicCycles = [
+        [
+            "Hydration Free energy of Cl",
+            "sub4/solvation_energy/media/cl_hydration.png",
+            "#hfe_cl"
+        ],
+        [
+            "Hydration Free energy of F",
+            "sub4/solvation_energy/media/f_cycle.png",
+            "#hfe_f"
+        ],
+        [
+            "Cycle for Difference in Hydration free energy (Cl vs F)",
+            "sub4/solvation_energy/media/delta_delta_cycle.png",
+            "#delta_delta_c"
+        ]
+	]
+    for (var i = 0; i < thermodynamicCycles.length; i++) {
+        imageAppendAsTab(
+            thermodynamicCycles[i][0],
+            thermodynamicCycles[i][1],
+            thermodynamicCycles[i][2],
+            "#cyclesTabHeader",
+            "#cyclesTabsContent"
+        );
+    };
+
+}
