@@ -10,7 +10,8 @@ function imageAppendAsTab(
         '</a><li/>';
     var tabDiv = '<div class="tab-pane fade" id="' +
         elementId.replace(/#/, "div_") +
-        '"><div class="container-fluid"><img class="img-fluid" src="'+
+        '"><div class="container-fluid center">'+
+        '<img style="display:block" class="img-fluid center" src="'+
         source+
         '"/></div></div>';
 

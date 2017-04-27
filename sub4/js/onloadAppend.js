@@ -220,6 +220,48 @@ function loadAppendCandock() {
             "#candockSidesTabsContent"
         );
     };
+
+
+
+
+
+    var leadOptimizationImages = [
+        [
+            "Lead 1",
+            "sub4/candock/media/lead1.png",
+            "#lead_1"
+        ],
+        [
+            "Lead 2",
+            "sub4/candock/media/lead2.png",
+            "#lead_2"
+        ],
+        [
+            "Designed Ligands 1",
+            "sub4/candock/media/designed1_spheres.gif",
+            "#d_lead_1"
+        ],
+        [
+            "Designed Ligands 2",
+            "sub4/candock/media/designed2_spheres.gif",
+            "#d_lead_2"
+        ],
+        [
+            "Buggy Export",
+            "sub4/candock/media/designed2.gif",
+            "#bug_lead"
+        ]
+    ];
+
+    for (var i = 0; i < leadOptimizationImages.length; i++) {
+        imageAppendAsTab(
+            leadOptimizationImages[i][0],
+            leadOptimizationImages[i][1],
+            leadOptimizationImages[i][2],
+            "#leadTabHeader",
+            "#leadTabsContent"
+        );
+    };
 }
 
 function loadAppendsSolvation() {
@@ -250,4 +292,38 @@ function loadAppendsSolvation() {
         );
     };
 
+    var changesInEnergy = [
+        [
+            "Cl to Fl ",
+            "sub4/solvation_energy/media/CL_to_FL.png",
+            "#dhdl_cl_fl"
+        ],
+        [
+            "F to Cl",
+            "sub4/solvation_energy/media/FL_to_CL.png",
+            "#dhdl_fl_cl"
+        ],
+        [
+            "F to Nothing",
+            "sub4/solvation_energy/media/FL_to_nothing.png",
+            "#dhdl_fl_vac"
+        ],
+        [
+            "Cl to Nothing",
+            "sub4/solvation_energy/media/CL_to_nothing.png",
+            "#dhdl_cl_vac"
+        ]
+	  ]
+
+    _append_as_table('sub4/solvation_energy/data/integrations.csv', '#deltas_home')
+
+    for (var i = 0; i < changesInEnergy.length; i++) {
+        imageAppendAsTab(
+            changesInEnergy[i][0],
+            changesInEnergy[i][1],
+            changesInEnergy[i][2],
+            "#deltasTabHeader",
+            "#deltasTabsContent"
+        );
+    };
 }

@@ -29,6 +29,10 @@ p {
     text-indent: 20px;
 }
 
+.center {
+    margin: 0 auto;
+}
+
 div.scroll {
     background-color: var(--palette-colour-5);
     width: auto;
