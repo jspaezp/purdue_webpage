@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <body>
     <div id="sidenav_content">
         <p><a href="#candock">Molecular Docking in candock</a></p>
@@ -9,27 +10,36 @@
     <div id="content">
         <div id="candock" class="container-fluid">
             <h1>Molecular Docking with Candock</h1>
-            <div id="simulation_water" class="container-fluid">
+            <div id="fda_compounds" class="container-fluid">
                 <h2>Docking FDA approved compounds to Target</h2>
-                <p></p>
 
-                <h3>Docking Procedure</h3>
-                <div class="container-fluid">
-                    <!-- added on load by js :D -->
-                    <ul class="nav nav-tabs" id="candockProcedureTabHeader"> </ul>
-                    <div class="tab-content box" id="candockProcedureTabsContent">
-                        <div id="candock_procedure_home" class="tab-pane fade in active">
-                            <center>
-                                <h5>Click Content to Display :D </h5>
-                            </center>
-                        </div>
-                    </div>
-                    <hr/>
-                </div>
+                <p>
+                    In order to simulate and predict the binding of several
+                    compounds to a given protein we used the CANDOCK software,
+                    which differs from commonly used programs (like autodock) in
+                    the fact that it simulates the binding of the given
+                    compounds by first separating the molecules into fragments,
+                    as their 'rotatable' components and ten connects this
+                    fragments to generate a final conformation.
+                </p>
 
                 <h3>Scores of the docked compounds</h3>
 
-                <div class="container-fluid" id="score_table"> </div>
+                <div class="container-fluid">
+                    <div class="container-fluid" id="score_table"> </div>
+                </div>
+
+                <p>
+                    We docked a list of compounds (provided up) to the structure
+                    of the kinase domain of FLT3 bound to quizartnib (a kinase
+                    inhibitor), and we are able to appreciate the diversity of
+                    binding affinities of multiple compounds, and more
+                    importantly we can appreciate that compounds can associate
+                    with the kinase domain without being kinase inhibitors;
+                    which would imply that the classification as a kinase
+                    inhibitor relies not on the binary binder-non binder
+                    conception but more on the strength of the binding.
+                </p>
 
                 <h3>Depiction of selected compounds</h3>
 
@@ -38,20 +48,61 @@
                     <ul class="nav nav-tabs" id="candockSidesTabHeader"> </ul>
                     <div class="tab-content box" id="candockSidesTabsContent">
                         <div id="candock_home" class="tab-pane fade in active">
-                            <center>
-                                <h5>Click Content to Display :D </h5>
-                            </center>
+                            <h5 style="text-align:center">Click Content to Display :D </h5>
                         </div>
                     </div>
                     <hr/>
                 </div>
+
+                <p>
+                    In order to appreciate which interactions lead to higher
+                    binding affinities in the bindingg pocket the visualization
+                    of the structures is provided of selected compounds (up)
+                    where we can see that good binders (P30, 1N1 and IRE) show a
+                    fairly deep integration with the pocket in addition to
+                    exquisite shape complementarity, therefore we can suggest
+                    that many van der waals interactions are providing the
+                    strength of binding, in contrast with bad binders that show
+                    a shallower binding; this notion is actually slightly
+                    counter-intuitive, since one could expect the binding to
+                    occur in great measure due to a few really strong
+                    interactions (extremely evident hydrogen bonds or ionic
+                    atractions).
+                </p>
+
+                <h3>Comparisson with the Crystal Structure</h3>
+
+                <div class="container-fluid">
+                    <img class="img-fluid" alt="" src="sub4/candock/media/grayfill.png" />
+                </div>
+
+                <p>
+                    Since one of the compounds used was the one used to
+                    crystalize the structure, we can use it to compare the
+                    predicted binding to the site with the lowest potential
+                    energy (the one that forms a crystal). We can appreciate
+                    that the predicted binding does not correspond to the
+                    binding depicted in the crystal structure, nonetheless this
+                    could be cause by several factors, since the binding occurs
+                    without molecular dynamics its posible that the lowest
+                    energy binding site is not acually the ensamble average at
+                    the temperature of crystalization. In addition it is to note
+                    that several aproximations where done in order to accelerate
+                    the docking process, as it is using only a percentage of the
+                    viable seeds, forcing a rigid docking and using only the top
+                    20 conformations to generate an ensamble average.
+                </p>
 
             </div>
             <div id="lead_optimization" class="container-fluid">
                 <h2>Lead Optimization</h2>
 
                 <p>
-                    
+                    In order to explore the additional capacities of candock, we
+                    ran the lead optimization protocol, where given a series of
+                    compounds, it generates combinations that would increase the
+                    binding affinities to a given protein and would reduce the
+                    binding affinity to an anti-target.
                 </p>
 
                 <div class="container">
@@ -62,16 +113,19 @@
                         </div>
                     </div>
                     <hr/>
+                </div>
 
-                <h3>Discusion</h3>
-                <hr/>
-                <h3>References</h3>
-                <hr/>
+                <!-- <h3>References</h3>
+                     <div>
+                     <ul>
+                     <li> </li>
+                     </ul>
+                     </div>
+                     <hr/>
+                   -->
             </div>
 
         </div>
-
-    </div>
 </body>
 
 </html>

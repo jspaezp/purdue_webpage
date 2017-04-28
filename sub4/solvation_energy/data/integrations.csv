@@ -1,5 +1,9 @@
 Run, Change in Energy
-Cl to F, -193.881 Kj/mol
-Fl to Cl, 193.418 Kj/mol
-Cl to Nothing, 399.508 Kj/mol
-FL to Nothing, 573.502 Kj/mol
+Cl to F in water, -193.881 Kj/mol
+Cl to F in vacuum, -0.006831 Kj/mol
+Fl to Cl in water, 193.418 Kj/mol
+Fl to Cl in vacuum, 0.00764 Kj/mol
+Cl to Nothing in water, 399.508 Kj/mol
+FL to Nothing in water, 573.502 Kj/mol
+Cl to Nothing in vacuum, 93.3082 Kj/mol
+FL to Nothing in vacuum, 91.425 Kj/mol
