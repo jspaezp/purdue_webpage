@@ -294,22 +294,22 @@ function loadAppendsSolvation() {
 
     var changesInEnergy = [
         [
-            "Cl to Fl ",
+            "Cl to Fl in Water",
             "sub4/solvation_energy/media/CL_to_FL.png",
             "#dhdl_cl_fl"
         ],
         [
-            "F to Cl",
+            "F to Cl in Water",
             "sub4/solvation_energy/media/FL_to_CL.png",
             "#dhdl_fl_cl"
         ],
         [
-            "F to Nothing",
+            "F to Nothing in Water",
             "sub4/solvation_energy/media/FL_to_nothing.png",
             "#dhdl_fl_vac"
         ],
         [
-            "Cl to Nothing",
+            "Cl to Nothing in Water",
             "sub4/solvation_energy/media/CL_to_nothing.png",
             "#dhdl_cl_vac"
         ]
